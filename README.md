@@ -12,7 +12,7 @@ Página Web de Electrodomésticos y productos electrónicos.
 
 
 # PRESENTACIONES PERSONALES
-- **Celi**: Mi nombre es Celia Gallay tengo 39 Años, vivo en Sunchales y trabajo en Sancor Salud hace 10 años.
+- **Celi**: Mi nombre es Celia Gallay tengo 34 Años, vivo en Sunchales y trabajo en Sancor Salud hace 10 años.
 Soy Técnica Superior en RRHH, estudiante de 3° año de la Lic. en Diseño Industrial. y Tengo cursos de Diseño UX-UI.
 Estoy empezando con la programación con este curso que nos brindan desde la empresa.
 
