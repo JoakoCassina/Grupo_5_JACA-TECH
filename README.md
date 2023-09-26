@@ -26,10 +26,14 @@ estoy haciendo mis primeros pasos en programación con este curso de Dh.
 
 
 # INSPIRACIÓN EN REFERENTES DEL MERCADO
-- MercadoLibre (mercadolibre.com.ar): nos inspiramos tanto en su página de Login (principalmente), como en su Home para realizar nuestro Wireframe.
+- MercadoLibre (https://mercadolibre.com.ar): nos inspiramos tanto en su página de Login (principalmente), como en su Home para realizar nuestro Wireframe.
 
-- Musimundo (musimundo.com) y Cetrogar (cetrogar.com.ar): tomamos de ellos también algunas referencias para crear el Wireframe del Home.
+- Musimundo (https://musimundo.com) y Cetrogar (cetrogar.com.ar): tomamos de ellos también algunas referencias para crear el Wireframe del Home.
 
-- Tiendamia (tiendamia.com/ar): de ella tomamos de referencia el carrito de compras, por su sencillez y fácil lectura.
+- Tiendamia (https://tiendamia.com/ar): de ella tomamos de referencia el carrito de compras, por su sencillez y fácil lectura.
 
-- Mega Tecnología (megatecnologia.com.ar): tomamos referencias de su aparatado de Outlet.
+- Mega Tecnología (https://megatecnologia.com.ar): tomamos referencias de su aparatado de Outlet.
+
+
+# TABLERO DE TRABAJO
+- Decidimos utilizar los Pojects de GitHub para dar seguimiento a nuestro trabajo. Link: https://github.com/users/Kokun35/projects/1
