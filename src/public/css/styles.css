@@ -1,3 +1,109 @@
-h1 {
-    color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
+
+header {
+    background-color: #2f2989;
+}
+
+header div.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.logo-principal {
+    width: 20%;
+    padding: 10px;
+}
+
+.logo-principal img {
+    width: 70px;
+
+}
+
+.login-cart {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+div ul.login-cart li.cart {
+    margin-left: 10px;
+
+}
+
+.login a,
+.cart a,
+div.menu {
+    color: white;
+    margin: 5px;
+}
+
+div.top-header div.shearch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(100, 100, 100);
+    max-height: 32px;
+    width: 100%;
+    padding: 5px;
+}
+
+div.top-header div.shearch div.shearch-bar {
+    color: gray;
+}
+
+div.top-header div.shearch div.shearch-i {
+    background-color: #74C0CD;
+    width: 5%;
+    font-size: medium;
+    text-align: center;
+    margin: 1px;
+    border-radius: 5px;
+    color: white;
+}
+.site-footer {
+    background-color: #a69afe;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 481px) {
+    header div.top-header {
+        flex-wrap: nowrap;
+        align-items: center;
+        height: auto;
+    }
+
+    div.menu {
+        display: none;
+    }
+
+    div.top-header div.shearch {
+        width: 50%;
+        order: -1;
+        border-radius: 5px;
+
+    }
+
+    div.top-header div.shearch div.shearch-i {
+        background-color: white;
+        color: #2f2989;
+    }
+
+    div.logo-principal {
+        order: -1;
+        width: 0;
+    }
+
+}
+
+@media (min-width: 769px) {}
