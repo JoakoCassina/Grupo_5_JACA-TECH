@@ -80,7 +80,7 @@ div.top-header div.shearch div.shearch-i {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 130px;
+    height: 150px;
 }
 
 .site-footer .redes {
@@ -106,12 +106,12 @@ div.top-header div.shearch div.shearch-i {
     text-decoration: none;
     display: block;
     color: #2f2989;
+    margin: 2%;
 }
 
 .option-footer {
     display: flex;
-    margin-bottom: 6px;
-
+    justify-content: center;
 }
 
 .option-footer .options i {
@@ -124,6 +124,9 @@ div.top-header div.shearch div.shearch-i {
 
 .option-footer .options i {
     font-size: 16px;
+}
+div.site-footer div.copy {
+    margin: 10px;
 }
 
 @media (min-width: 481px) {
@@ -199,4 +202,5 @@ div.top-header div.shearch div.shearch-i {
         font-size: 16px;
         font-weight: 400;
     }
+    
 }
