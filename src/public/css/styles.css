@@ -19,6 +19,7 @@ header div.top-header {
 div.logo-principal {
     width: 20%;
     padding: 10px;
+    margin-left: 30%;
 }
 
 .logo-principal img {
@@ -42,6 +43,7 @@ div ul.login-cart li.cart {
 div.menu {
     color: white;
     margin: 5px;
+    font-size: 22px;
 }
 
 div.top-header div.shearch {
@@ -68,6 +70,45 @@ div.top-header div.shearch div.shearch-i {
     border-radius: 5px;
     color: white;
 }
+header nav {
+    display: flex;
+}
+nav div.menu {
+    position: absolute;
+    left: 20px;
+    top: 3vh;
+}
+nav div.menu label i {
+    cursor: pointer;
+}
+#label_check {
+    width: 22px;
+}
+#check_menu {
+    display: none;
+}
+nav ul.nav_menu li a,
+nav ul.nav_menu li {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    
+}
+/* Falta Agregar Funcion Al togglear el Icon de burger*/
+nav ul.nav_menu {
+    background-color: #a69afe;
+    position: fixed;
+    top: 90px;
+    width: 100%;
+    padding: 20px;
+    display: none;
+}
+nav ul.nav_menu li ul.sub_menu {
+    display: none;
+}
+
 
 /* Footer */
 
@@ -144,7 +185,7 @@ div.site-footer div.copy {
         width: 50%;
         order: -1;
         border-radius: 5px;
-
+        margin-left: 30px;
     }
 
     div.top-header div.shearch div.shearch-i {
@@ -155,8 +196,38 @@ div.site-footer div.copy {
     div.logo-principal {
         order: -1;
         width: 0;
+        margin-left: 0;
     }
 
+    nav {
+        display: flex;
+        border-top: 1px solid #74C0CD;
+    
+    }
+    nav ul.nav_menu {
+        background-color: #2f2989;
+        position: static;
+        display: flex;
+        padding: 20px;
+        
+    }
+    ul.nav_menu li {
+        color: #74C0CD;
+        list-style: none;
+        margin-right: 10%;
+        text-transform: uppercase;
+        padding: 10px;
+        
+    }
+    ul.nav_menu li:hover {
+        color: #2f2989;
+        background-color: #74C0CD;
+        border-radius: 5px;
+        box-shadow: 0 0 10px white;
+    }
+    
+
+    /*Footer*/
     .options a {
         margin-bottom: 5px;
     }
