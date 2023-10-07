@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 app.get('/views/login.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/login.html'))
 });
-app.get('/views/productCart.html', (req, res) => {
+app.get('/productCart', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/productCart.html'))
 });
 app.get('/views/productDetail.html', (req, res) => {
