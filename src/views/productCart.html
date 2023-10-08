@@ -18,25 +18,40 @@
 <body>
     <main>
         <section>
+            <h1 class="title-cart">Mi Carrito</h1>
             <article>
                 <div class="product">
                     <img src="#" alt="producto" class="image-product">
                 </div>
-                <div>
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <h4 class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
-                    <p class="price">$$$$</p>
+                <div class="product-description">
+                    <h3 class="name-article">Lorem ipsum.</h3>
+                    <h4 class="description">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p class="price">$10.000</p>
+                    <div class="btn-remove-add">
+                        <div class="btn-add">
+                            <i class="fas fa-plus"></i>
+                            <input type="text" value="1">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
                 </div>
             </article>
-            <button type="submit">Borrar del carrito</button>
-            <p>Recibi entre 10 y 15 dias habiles (puede variar segun tu localidad)</p>
-            <div class="summary cart">
-                <p class="subtotal">Subtotal</p>
-                <p class="price-subtotal">$$$$</p>
-                <p class="Shipping costs">Gastos de envio</p>
-                <h3 class="shopping-continue">Continua comprando y ahorra en tu envio</h3>
+            <p class="comment"><span>Recibi entre 10 y 15 dias habiles</span> (puede variar segun tu localidad)</p>
+            <div class="summary-cart">
+                <div class="subtotal-price">
+                    <p class="subtotal">Subtotal</p>
+                    <p class="price-subtotal">$10.000</p>
+                </div>
+                <div class="shipping-costs">
+                    <p>Gastos de envio</p>
+                    <p>$500</p>
+                </div>
+                <div class="shopping-continue">
+                    <p>Continua comprando y ahorra en tu envio</p>
+                </div>
             </div>
-            <button type="submit">Finalizar compra</button>
+            <button type="submit" class="btn-finalize">Finalizar compra</button>
         </section>
     </main>
 </body>
