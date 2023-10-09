@@ -3,10 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/styles.css">
+    <title>Login</title>
 </head>
-<body>
-    <h1 class="ded">Hola Mundo</h1>
+<body class="background_forms">
+    <header>
+
+        <div class="top-header">
+            
+            <div class="logo-principal">
+                <a href="/"><img src="/img/logo 2.png" alt="logo"></a>
+            </div>
+            <div>
+                <ul class="login-cart">
+                    <li class="login"><a href="/views/login.html"><i class="fas fa-user"></i></a></li>
+                    <li class="cart"><a href="/views/productCart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="shearch" action="#" method="GET">
+                <div class="shearch-bar">Buscar productos, marcas y más</div>
+                <div class="shearch-i"><i class="fa fa-search"></i></div>
+            </div>
+        </div>
+        <nav>
+            <div class="menu">
+                <input type="checkbox" id="check_menu">
+                <label for="check_menu" id="label_check">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+            <ul class="nav_menu">
+                <li class="active"><a href="#">Categorias</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">TV, Audio y Video</a></li>
+                        <li><a href="">Celulares y Tecnología</a></li>
+                        <li><a href="#">Climatización</a></li>
+                        <li><a href="#">Electrodomesticos</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#">Sucursales</a></li>
+                <li class="active"><a href="#">Seguros</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="forms">
+            <form method="post">
+                <h1>Inicio de Sesion</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre de Usuario" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox">Mantener sesion iniciada</label>
+                    <a href="#">¿Olvido su contraseña?</a>
+                </div>
+                <button>Iniciar</button>
+                <div class="register_link">
+                    <a href="/views/register.html">Crea tu cuenta</a>
+                </div>
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="site-footer">
+            <div class="redes">
+                <h4>Seguinos en Redes</h4>
+                <a href="www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="www.x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="option-footer">
+                <div class="options">
+                    <i class="fas fa-credit-card"></i>
+                    <h4>Elegi como pagar</h4>
+                    <p>Podés pagar con tarjeta, débito o efectivo. Tenemos todas las Tarjetas.</p>
+                    <a href="#" target="_blank">Cómo pagar tus compras</a>
+                </div>
+                <div class="options">
+                    <i class="fas fa-box"></i>
+                    <h4>Envio gratis desde $10.000</h4>
+                    <p>Solo por estar registrado en Jaca-Tech tenés envíos gratis en miles de productos.</p>
+                    <a href="#" target="_blank">Conocé más sobre este beneficio</a>
+                </div>
+                <div class="options">
+                    <i class="fas fa-lock"></i>
+                    <h4>Seguridad, de principio a fin</h4>
+                    <p>¿No te gusta? ¡Devolvelo! En Jaca-Tech, no hay nada que no puedas hacer, estás siempre
+                        protegido.</p>
+                    <a href="#" target="_blank">Cómo te protegemos</a>
+                </div>
+            </div>
+            <div class="copy">&copy; Copyright 2023 </div>
+        </div>
+    </footer>
 </body>
 </html>
