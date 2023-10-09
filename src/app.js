@@ -20,6 +20,13 @@ app.get('/views/register.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/register.html'))
 });
 
+//Funcion Icon Menu de Navegacion
+//const navToggle = document.querySelector(".nav_toggle");
+//const navMenu = document.querySelector(".nav_menu");
+//navToggle.addEventListener("click", () => {
+//   navMenu.classList.toggle("nav_menu-visible");
+//});
+
 const port = 3035;
 
 app.listen(port, () => {
