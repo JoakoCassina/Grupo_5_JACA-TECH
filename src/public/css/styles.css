@@ -274,6 +274,7 @@ div.forms form button {
     color: #2f2989;
     font-weight: 600;
     transition: 800ms;
+    margin: 10px 0;
 
 }
 div.forms form button:hover {
