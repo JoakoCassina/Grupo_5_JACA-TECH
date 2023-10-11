@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+body.background {
+    background: linear-gradient(300deg, #a69afe, #74C0CD);
+    height: 100%;
+}
 
 header {
     background-color: #2f2989;
@@ -126,7 +130,6 @@ nav ul.nav_menu li ul.sub_menu {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    position: fixed;
     bottom: 0;
     width: 100%;
     height: 150px;
@@ -179,138 +182,6 @@ nav ul.nav_menu li ul.sub_menu {
 div.site-footer div.copy {
     margin: 10px;
 }
-
-/*FORMULARIOS*/
-body.background_forms {
-    background: linear-gradient(300deg, #a69afe, #74C0CD);
-    height: 100%;
-}
-
-body.background_forms main.main_form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 200px;
-}
-
-main div.forms {
-    width: 450px;
-    height: 50%;
-    background-color: transparent;
-    color: white;
-    border-radius: 10px;
-    padding: 30px;
-}
-
-main div.forms form h1 {
-    text-align: center;
-}
-
-main div.forms form div.input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
-}
-
-form div.input-box input {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid #2f2989;
-    border-radius: 40px;
-    font-size: 16px;
-    color: white;
-    padding: 20px 45px 20px 20px;
-}
-
-form div.input-box input::placeholder {
-    color: white;
-}
-
-form div.input-box i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-}
-
-main div.forms form div.remember {
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-    margin: 15px;
-}
-
-div.remember label input {
-    accent-color: white;
-    margin-right: 5px;
-}
-
-div.remember a {
-    color: white;
-    text-decoration: none;
-}
-
-div.register_link a:hover,
-div.remember a:hover,
-div.consentimiento a:hover {
-    text-decoration: underline;
-}
-
-div.forms form button {
-    width: 100%;
-    height: 45px;
-    background: white;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    cursor: pointer;
-    font-size: 16px;
-    color: #2f2989;
-    font-weight: 600;
-    transition: 800ms;
-    margin: 10px 0;
-
-}
-div.forms form button:hover {
-    background-color: #2f2989;
-    color: white;
-
-}
-
-div.forms form div.register_link {
-    font-size: 15px;
-    text-align: center;
-    margin: 30px 0 10px;
-}
-
-div.register_link a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-}
-/*REGISTER*/
-div.forms div.consentimiento {
-    padding: 20px;
-}
-div.consentimiento label input {
-    accent-color: white;
-    margin-right: 10px;
-}
-
-div.consentimiento a {
-    color: #2f2989;
-    text-decoration: none;
-}
-
-
-
-
 
 @media (min-width: 481px) {
     header div.top-header {
@@ -388,16 +259,7 @@ div.consentimiento a {
         flex-direction: row;
         justify-content: space-around;
     }
-
-    /*FORMULARIOS (LOGIN)*/
-    main div.forms {
-    border: 2px solid #2f2989;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
-    }
-
 }
-
 
 @media (min-width: 769px) {
 

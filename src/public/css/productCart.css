@@ -4,11 +4,9 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-
-body {
-    background: linear-gradient(300deg, #a69afe, #74C0CD);
+.cart_main {
+    margin-bottom: 300px;
 }
-
 .section-product {
     padding-bottom: 160px;
 }

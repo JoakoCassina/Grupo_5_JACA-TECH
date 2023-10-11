@@ -15,15 +15,13 @@
     <title>Jaca-Tech</title>
 </head>
 
-<body>
+<body class="background">
     <header>
 
         <div class="top-header">
-            <div class="menu">
-                <i class="fas fa-bars"></i>
-            </div>
+
             <div class="logo-principal">
-                <img src="/img/logo 2.png" alt="logo">
+                <a href="/"><img src="/img/logo 2.png" alt="logo"></a>
             </div>
             <div>
                 <ul class="login-cart">
@@ -36,10 +34,30 @@
                 <div class="shearch-i"><i class="fa fa-search"></i></div>
             </div>
         </div>
+        <nav>
+            <div class="menu">
+                <input type="checkbox" id="check_menu">
+                <label for="check_menu" id="label_check">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+            <ul class="nav_menu">
+                <li class="active"><a href="#">Categorias</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">TV, Audio y Video</a></li>
+                        <li><a href="">Celulares y Tecnología</a></li>
+                        <li><a href="#">Climatización</a></li>
+                        <li><a href="#">Electrodomesticos</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#">Sucursales</a></li>
+                <li class="active"><a href="#">Seguros</a></li>
+            </ul>
+        </nav>
 
     </header>
 
-    <main>
+    <main class="cart_main">
         <section class="section-product">
             <h1 class="title-cart">Mi Carrito</h1>
             <div class="article-desktop">
