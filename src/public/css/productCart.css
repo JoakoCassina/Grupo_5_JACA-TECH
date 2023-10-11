@@ -5,23 +5,33 @@
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    background: linear-gradient(300deg, #a69afe, #74C0CD);
+}
+
+.section-product {
+    padding-bottom: 160px;
+}
+
 main section h1.title-cart {
     font-size: 1.5rem;
-    font-weight: 500;
-    background-color: #a69afe;
+    font-weight: 400;
+    background-color: #2f2989;
+    color: #fff;
     width: 100%;
     height: 80px;
     padding: 30px 20px 20px;
     margin-top: 15px;
 }
 
-img {
+main section article img {
     width: 100%;
 }
 
 main section article div.product {
     width: 250px;
-    height: 300px;
+    height: 250px;
+    background-color: #fff;
 }
 
 main section article div.product img {
@@ -30,7 +40,7 @@ main section article div.product img {
 
 main section article {
     display: flex;
-    margin: 8px;
+    margin-top: 8px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
@@ -38,27 +48,31 @@ main section article {
 main section .product-description {
     width: 80%;
     background-color: #fff;
-    margin-left: 5px;
-    padding-top: 25px;
+    padding-left: 5px;
+    padding-top: 15px;
     text-align: left;
+    margin-left: 1px solid #eeee;
 }
 
 div.product-description h3.name-article {
     font-size: 1rem;
     font-weight: 500;
+    color: #0d512a;
 }
 
-div.product-description h4.description {
-    font-size: 1rem;
+main section div.product-description h4.description {
+    font-size: 0.8rem;
+    text-transform: uppercase;
     font-weight: 400;
     margin-top: 10px;
 }
 
-div.product-description p.price {
+main section div.product-description p.price {
     font-size: 1.5rem;
     font-weight: 400;
     color: #000;
     margin-top: 22px;
+    display: block;
 }
 
 section article .product-description .btn-remove-add {
@@ -75,34 +89,38 @@ div.product-description .btn-remove-add i.fa-trash-alt {
     font-size: 24px;
     margin-top: 22px;
     cursor: pointer;
+    color: #0d512a;
 }
 
 section article div.btn-add input {
     border: 0;
     text-align: center;
+    max-width: 60px;
 }
 
 section article div.btn-add {
     display: flex;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 1px solid #000;
-    padding: 2px;
+    padding: 5px;
 }
 
-section p.comment {
+main section p.comment {
     font-size: 1rem;
     color: #000;
-    text-align: center;
+    text-align: justify;
+    font-weight: 400;
+    display: block;
+    padding: 10px;
 }
 
-section p.comment span {
+main section p.comment span {
     font-size: 1rem;
     font-weight: 700;
     color: #0d512a;
-    text-align: center;
 }
 
-section div.summary-cart {
+main section div.summary-cart {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -118,44 +136,84 @@ section .summary-cart .subtotal-price {
     font-weight: 700;
 }
 
+section .summary-cart .subtotal-price .subtotal, .price-subtotal {
+    display: block;
+}
+
 section .summary-cart .shipping-costs {
     display: flex;
     justify-content: space-between;
-    font-size: 1rem;
-    font-weight: 700;
 }
 
-section .summary-cart .shopping-continue {
+section .summary-cart .shipping-costs p {
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+}
+
+section div.summary-cart div.shopping-continue {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 50px;
-    border: 1px solid #a69afe;
+    border: 1px solid #0d512a;
     margin-top: 20px;
 }
 
-section .summary-cart .shopping-continue p {
+section .summary-cart .shopping-continue a {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+section .summary-cart .shopping-continue a p {
+    display: block;
 }
 
 section button.btn-finalize {
     width: 100%;
     padding: 10px 20px;
-    background-color: #a69afe;
+    background-color: #2f2989;
     color: white;
     border: none;
-    border-radius: 2px;
     cursor: pointer;
     margin-top: 15px;
     font-size: 1rem;
+    margin-bottom: 15px;
 }
 
 @media (min-width: 480px) {
-
-
-
+    .section-product {
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
+@media (min-width: 769px) {
+    main section div.summary-desktop {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .section-product {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .article-desktop {
+        display: flex;
+    }
+
+    main section .product-description {
+        width: 250px;
+        height: 250px;
+    }
+
+    main section article {
+        border-bottom: none;
+    }
+}
 
