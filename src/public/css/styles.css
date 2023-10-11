@@ -168,7 +168,7 @@ nav ul.nav_menu li ul.sub_menu {
 }
 
 .option-footer h4,
-p {
+.option-footer p {
     display: none;
 }
 
@@ -186,7 +186,7 @@ body.background_forms {
     height: 100%;
 }
 
-body.background_forms main {
+body.background_forms main.main_form {
     display: flex;
     justify-content: center;
     align-items: center;
