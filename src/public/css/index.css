@@ -28,8 +28,9 @@ main h2.title_home {
     align-items: center;
 }
 
-div article img {
+div article a img {
     width: 100%;
+    padding: 16px;
 }
 
 article.product {
@@ -39,6 +40,7 @@ article.product {
     border-radius: 10px;
     margin: 20px;
     position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5)
 }
 
 article.product div.card_description {
@@ -106,13 +108,4 @@ article.product div.card_description span.off {
         align-items: normal;
         flex-wrap: wrap;
     }
-
-    div article img {
-        width: 100%;
-    }
-
-    article.product {
-        max-width: 300px;
-    }
-
 }
