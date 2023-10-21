@@ -2,23 +2,18 @@ const express = require('express');
 const path = require('path')
 const app = express();
 
+const mainRoutes = require('./routes/main');
+const productRoutes = require('./routes/product');
+const userRoutes = require('./routes/user');
+
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/index.html'))
-});
-app.get('/views/login.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/login.html'))
-});
-app.get('/views/productCart.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/productCart.html'))
-});
-app.get('/views/productDetail.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/productDetail.html'))
-});
-app.get('/views/register.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/register.html'))
-});
+app.use('/', mainRoutes);
+
+app.use('/product', productRoutes);
+
+app.use('/user', userRoutes);
+
 
 const port = 3035;
 
