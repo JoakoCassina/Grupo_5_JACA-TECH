@@ -14,6 +14,9 @@ app.use('/product', productRoutes);
 
 app.use('/user', userRoutes);
 
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
 
 const port = 3035;
 
