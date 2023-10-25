@@ -1,0 +1,38 @@
+<%- include('partials/head', { styles: ['forms'] }) %>
+<body class="background">
+    <%- include('partials/header') %>
+    <main class="main_form">
+        <div class="forms">
+            <form method="post">
+                <div>
+                    <h1>Carga de Producto</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="Nombre" required name="Name">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Descripcion" required name="Description">
+                    </div>
+                    <div class="input-box">
+                        <input type="file" required name="Img">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Categoría" required name="Category">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Sub-Categoría" required name="Sub-Category">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="Precio" required name="Price">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="Descuento" name="Discount">
+                    </div>
+                    <button type="submit">Cargar</button>
+                    <button type="reset">Limpiar Datos</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>
