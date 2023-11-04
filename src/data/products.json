@@ -1,97 +1,99 @@
 [
     {
-    "id": 1,
-    "name": "SMART LED TV SAMSUNG 55 \" PULGADAS 4K UHD",
-    "description": "Televisor smart QLED. Resolucion QLED 4K (3840x2160). Formato de pantalla wide. Procesador Quantum Lite 4K. Sonido envolvente OTS lite. ",
-    "price": 299999,
-    "discount": 15,
-    "category": "TV",
-    "image": "TV Samsumg 55.png"
-  },
-  {
-    "id": 2,
-    "name": "SMART LED TV SAMSUNG 32\" PULGADAS HD",
-    "description": "Led Smart TV. Resolucion 1366x768PX. Sintonizador TDA. Brilllo 250 CD/M2. Frecuencia de barrido 60HZ. Sonido Stereo.",
-    "price": 129999,
-    "discount": 10,
-    "category": "TV",
-    "image": "TV Samsung 32.png"
-  },
-  {
-    "id": 3,
-    "name": "PARLANTES NOGANET",
-    "description": "Parlantes de PC Gamer. Potencia Total 6W (2 Parlantes de 3W). Compatible con PC, Smartphone, MP3 Player y otros por conexion auxiliar de Audio.",
-    "price": 10999,
-    "discount": 5,
-    "category": "Audio",
-    "sub-category": "Parlantes",
-    "image": "PARLANTES NOGANET NG-92P.png"
-  },
-  {
-    "id": 4,
-    "name": "PARLANTE PHILCO",
-    "description": "Parlante portatil con conexion inalambrica Bluetooth y Flash Light (iluminacion estilo fiesta). Potencia 500W. Entrada auxiliar mini plug 3.5mm. Radio FM.",
-    "price": 36499,
-    "discount": 20,
-    "category": "Audio",
-    "sub-category": "Parlantes",
-    "image": "PARLANTE PHILCO DJP11P.png"
-  },
-  {
-    "id": 5,
-    "name": "AURICULAR DAEWOO",
-    "description": "Auricular in ear inalambrico. Tecnologia TWS. Conexion por bluetooth. Rango de frecuencia: 2.4 hz - 2.485 GHz.",
-    "price": 8799,
-    "discount": 15,
-    "category": "Audio",
-    "sub-category": "Auriculares",
-    "image": "AURICULAR DAEWOO DW-PR431SI.png"
-  },
-  {
-    "id": 6,
-    "name": "AURICULAR GAMER MARVO",
-    "description": "Auricular gamer. Vincha over ear. Microfono omnidireccional. Control de volumen. Controlador: 50 mm. Conector USB 2.0.",
-    "price": 79069,
-    "discount": 0,
-    "category": "Audio",
-    "sub-category": "Parlantes",
-    "image": "AURICULAR GAMER MARVO HG9053.png"
-  },
-  {
-    "id": 7,
-    "name": "CELULAR SAMSUNG GALAXY A54",
-    "description": "Celular. Pantalla: 6.4 \" super amoled 1080 x 2340 (FHD+). Procesador: Octa-Core. Almacenamiento: 128 Gb. Ram: 8Gb.",
-    "price": 286999,
-    "discount": 10,
-    "category": "Celulares",
-    "image": "CELULAR SAMSUNG GALAXY A54 SM-A546E LIME.png"
-  },
-  {
-    "id": 8,
-    "name": "CELULAR MOTOROLA RAZR 40",
-    "description": "Celular. Pantalla principal de 6.9 \", resolucion 1080 x 2640 FHD+, 413ppi, HiD, 144Hz. Tecnologia pOLED.",
-    "price": 499999,
-    "discount": 5,
-    "category": "Celulares",
-    "image": "CELULAR MOTOROLA RAZR 40 - XT2323-1 GRIS MATE.png"
-  },
-  {
-    "id": 9,
-    "name": "TABLET SAMSUNG GALAXY TAB S9 ULTRA SM-X910 14.6' 512 GB GRAPHITE",
-    "description": "Tablet. Pantalla de 14.6\" (369.9 mm), resolucion 2960x1848 (WQXGA+), Dynamic AMOLED 2X. Procesador Snapdragon 8 Gen 2 octa core (3.36GHz,2.8GHz,2GHz).",
-    "price": 1142269,
-    "discount": 15,
-    "category": "Tablets",
-    "image": "TABLET SAMSUNG GALAXY TAB S9 ULTRA SM-X910 14.6' 512 GB GRAPHITE.png"
-  },
-  {
-    "id": 10,
-    "name": "TABLET SKY DEVICES SKY-KID1 7' 16 GB AZUL",
-    "description": "Tablet. Pantalla de 7\" HD (600x1024). Procesador Cortex A7 (1.5 GHz). Capacidad 16 Gb / RAM 2 Gb. Camara principal de 5 Mp / Camara frontal de 2 Mp.",
-    "price": 44999,
-    "discount": 10,
-    "category": "Tablets",
-    "image": "TABLET SKY DEVICES SKY-KID1 7' 16 GB AZUL.png"
+        "id": 1,
+        "name": "SMART LED TV SAMSUNG 55 \" 4K UHD",
+        "description": "Televisor smart QLED. Resolucion QLED 4K (3840x2160). Formato de pantalla wide. Procesador Quantum Lite 4K. Sonido envolvente OTS lite. ",
+        "price": 299999,
+        "discount": 15,
+        "category": "TV",
+        "subCategory": "SMART TV",
+        "image": "TV Samsumg 55.png"
+    },
+    {
+        "id": 2,
+        "name": "SMART LED TV SAMSUNG 32\" HD",
+        "description": "Led Smart TV. Resolucion 1366x768PX. Sintonizador TDA. Brilllo 250 CD/M2. Frecuencia de barrido 60HZ. Sonido Stereo.",
+        "price": 129999,
+        "discount": 0,
+        "category": "TV",
+        "subCategory": "SMART TV",
+        "image": "TV Samsung 32.png"
+    },
+    {
+        "id": 3,
+        "name": "PARLANTES NOGANET",
+        "description": "Parlantes de PC Gamer. Potencia Total 6W (2 Parlantes de 3W). Compatible con PC, Smartphone, MP3 Player y otros por conexion auxiliar de Audio.",
+        "price": 10999,
+        "discount": 5,
+        "category": "Audio",
+        "sub-category": "Parlantes",
+        "image": "PARLANTES NOGANET NG-92P.png"
+    },
+    {
+        "id": 4,
+        "name": "PARLANTE PHILCO",
+        "description": "Parlante portatil con conexion inalambrica Bluetooth y Flash Light (iluminacion estilo fiesta). Potencia 500W. Entrada auxiliar mini plug 3.5mm. Radio FM.",
+        "price": 36499,
+        "discount": 20,
+        "category": "Audio",
+        "sub-category": "Parlantes",
+        "image": "PARLANTE PHILCO DJP11P.png"
+    },
+    {
+        "id": 5,
+        "name": "AURICULAR DAEWOO",
+        "description": "Auricular in ear inalambrico. Tecnologia TWS. Conexion por bluetooth. Rango de frecuencia: 2.4 hz - 2.485 GHz.",
+        "price": 8799,
+        "discount": 0,
+        "category": "Audio",
+        "sub-category": "Auriculares",
+        "image": "AURICULAR DAEWOO DW-PR431SI.png"
+    },
+    {
+        "id": 6,
+        "name": "AURICULAR GAMER MARVO",
+        "description": "Auricular gamer. Vincha over ear. Microfono omnidireccional. Control de volumen. Controlador: 50 mm. Conector USB 2.0.",
+        "price": 79069,
+        "discount": 0,
+        "category": "Audio",
+        "sub-category": "Parlantes",
+        "image": "AURICULAR GAMER MARVO HG9053.png"
+    },
+    {
+        "id": 7,
+        "name": "CELULAR SAMSUNG GALAXY A54",
+        "description": "Celular. Pantalla: 6.4 \" super amoled 1080 x 2340 (FHD+). Procesador: Octa-Core. Almacenamiento: 128 Gb. Ram: 8Gb.",
+        "price": 286999,
+        "discount": 10,
+        "category": "Celulares",
+        "image": "CELULAR SAMSUNG GALAXY A54 SM-A546E LIME.png"
+    },
+    {
+        "id": 8,
+        "name": "CELULAR MOTOROLA RAZR 40",
+        "description": "Celular. Pantalla principal de 6.9 \", resolucion 1080 x 2640 FHD+, 413ppi, HiD, 144Hz. Tecnologia pOLED.",
+        "price": 499999,
+        "discount": 0,
+        "category": "Celulares",
+        "image": "CELULAR MOTOROLA RAZR 40 - XT2323-1 GRIS MATE.png"
+    },
+    {
+        "id": 9,
+        "name": "TABLET SAMSUNG GALAXY TAB S9 ULTRA SM-X910 14.6' 512 GB GRAPHITE",
+        "description": "Tablet. Pantalla de 14.6\" (369.9 mm), resolucion 2960x1848 (WQXGA+), Dynamic AMOLED 2X. Procesador Snapdragon 8 Gen 2 octa core (3.36GHz,2.8GHz,2GHz).",
+        "price": 1142269,
+        "discount": 15,
+        "category": "Tablets",
+        "image": "TABLET SAMSUNG GALAXY TAB S9 ULTRA SM-X910 14.6' 512 GB GRAPHITE.png"
+    },
+    {
+        "id": 10,
+        "name": "TABLET SKY DEVICES SKY-KID1 7' 16 GB AZUL",
+        "description": "Tablet. Pantalla de 7\" HD (600x1024). Procesador Cortex A7 (1.5 GHz). Capacidad 16 Gb / RAM 2 Gb. Camara principal de 5 Mp / Camara frontal de 2 Mp.",
+        "price": 44999,
+        "discount": 10,
+        "category": "Tablets",
+        "image": "TABLET SKY DEVICES SKY-KID1 7' 16 GB AZUL.png"
     },
     {
         "id": 11,
@@ -268,7 +270,7 @@
         "name": "LAVAVAJILLAS DREAN DISH",
         "description": "NUEVO PANEL TACTIL DIGITAL - COLOR BLANCO - 15 CUBIERTOS - 3 CESTOS - BAJO CONSUMO DE AGUA Y ENERGÍA ",
         "price": 573199,
-        "discount": 10,
+        "discount": 0,
         "category": "Electrohogar",
         "sub-category": "Lavavajillas",
         "image": "LAVAVAJILLAS DREAN DISH 15.2DTB.png"
@@ -288,7 +290,7 @@
         "name": "BATIDORA DE MANO OSTER",
         "description": "Batidora de mano 250 W. 6 Velocidades. Tazon con capacidad para 3.7 litros.",
         "price": 33279,
-        "discount": 25,
+        "discount": 0,
         "category": "Pequeños",
         "sub-category": "Batidora",
         "image": "BATIDORA DE MANO OSTER FPSTHS3610.png"
@@ -440,7 +442,7 @@
         "price": 142799,
         "discount": 5,
         "category": "Pequeños Hogar",
-        "sub-category": "Aspiradora",
+        "subCategory": "Aspiradora",
         "image": "ASPIRADORA ROBOT DAEWOO DELTA DW-RVDE-1KN.png"
     },
     {
@@ -472,6 +474,25 @@
         "category": "Pequeños Hogar",
         "sub-category": "Maquinas de Coser",
         "image": "MAQUINA DE COSER SINGER M3305C.png"
+    },
+    {
+        "id": 49,
+        "name": "alej",
+        "description": "aaa",
+        "category": "aaa",
+        "sub-category": "aa",
+        "price": "10000",
+        "discount": "20",
+        "image": "1699124480835-product.jpg"
+    },
+    {
+        "id": 50,
+        "name": "celia",
+        "description": "aaa",
+        "category": "aaa",
+        "sub-category": "aaa",
+        "price": "20000",
+        "discount": "30",
+        "image": "1699124733263-product.jpg"
     }
-
 ]

@@ -14,7 +14,8 @@ main.home div img.banner {
 
 }
 
-main h2.title_home {
+main h2.title_home, 
+main h2.title_list {
     color: #ffffff;
     text-align: center;
     font-weight: 600;
@@ -31,6 +32,7 @@ main h2.title_home {
 div article a img {
     width: 100%;
     padding: 16px;
+    max-height: 260px;
 }
 
 article.product {

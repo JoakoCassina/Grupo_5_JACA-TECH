@@ -3,29 +3,29 @@
     <%- include('partials/header') %>
     <main class="main_form">
         <div class="forms">
-            <form method="post">
+            <form action="/product/create" method="post"  enctype="multipart/form-data">
                 <div>
                     <h1>Carga de Producto</h1>
                     <div class="input-box">
-                        <input type="text" placeholder="Nombre" required name="Name">
+                        <input type="text" placeholder="Nombre" required name="name">
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Descripcion" required name="Description">
+                        <input type="text" placeholder="Descripcion" required name="description">
                     </div>
                     <div class="input-box">
-                        <input type="file" required name="Img">
+                        <input type="file" required name="img">
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Categoría" required name="Category">
+                        <input type="text" placeholder="Categoría" required name="category">
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Sub-Categoría" required name="Sub-Category">
+                        <input type="text" placeholder="Sub-Categoría" required name="sub-category">
                     </div>
                     <div class="input-box">
-                        <input type="number" placeholder="Precio" required name="Price">
+                        <input type="number" placeholder="Precio" required name="price">
                     </div>
                     <div class="input-box">
-                        <input type="number" placeholder="Descuento" name="Discount">
+                        <input type="number" placeholder="Descuento" name="discount">
                     </div>
                     <button type="submit">Cargar</button>
                     <button type="reset">Limpiar Datos</button>
