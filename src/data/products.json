@@ -1,0 +1,477 @@
+[
+    {
+    "id": 1,
+    "name": "SMART LED TV SAMSUNG 55 \" PULGADAS 4K UHD",
+    "description": "Televisor smart QLED. Resolucion QLED 4K (3840x2160). Formato de pantalla wide. Procesador Quantum Lite 4K. Sonido envolvente OTS lite. ",
+    "price": 299999,
+    "discount": 15,
+    "category": "TV",
+    "image": "TV Samsumg 55.png"
+  },
+  {
+    "id": 2,
+    "name": "SMART LED TV SAMSUNG 32\" PULGADAS HD",
+    "description": "Led Smart TV. Resolucion 1366x768PX. Sintonizador TDA. Brilllo 250 CD/M2. Frecuencia de barrido 60HZ. Sonido Stereo.",
+    "price": 129999,
+    "discount": 10,
+    "category": "TV",
+    "image": "TV Samsung 32.png"
+  },
+  {
+    "id": 3,
+    "name": "PARLANTES NOGANET",
+    "description": "Parlantes de PC Gamer. Potencia Total 6W (2 Parlantes de 3W). Compatible con PC, Smartphone, MP3 Player y otros por conexion auxiliar de Audio.",
+    "price": 10999,
+    "discount": 5,
+    "category": "Audio",
+    "sub-category": "Parlantes",
+    "image": "PARLANTES NOGANET NG-92P.png"
+  },
+  {
+    "id": 4,
+    "name": "PARLANTE PHILCO",
+    "description": "Parlante portatil con conexion inalambrica Bluetooth y Flash Light (iluminacion estilo fiesta). Potencia 500W. Entrada auxiliar mini plug 3.5mm. Radio FM.",
+    "price": 36499,
+    "discount": 20,
+    "category": "Audio",
+    "sub-category": "Parlantes",
+    "image": "PARLANTE PHILCO DJP11P.png"
+  },
+  {
+    "id": 5,
+    "name": "AURICULAR DAEWOO",
+    "description": "Auricular in ear inalambrico. Tecnologia TWS. Conexion por bluetooth. Rango de frecuencia: 2.4 hz - 2.485 GHz.",
+    "price": 8799,
+    "discount": 15,
+    "category": "Audio",
+    "sub-category": "Auriculares",
+    "image": "AURICULAR DAEWOO DW-PR431SI.png"
+  },
+  {
+    "id": 6,
+    "name": "AURICULAR GAMER MARVO",
+    "description": "Auricular gamer. Vincha over ear. Microfono omnidireccional. Control de volumen. Controlador: 50 mm. Conector USB 2.0.",
+    "price": 79069,
+    "discount": 0,
+    "category": "Audio",
+    "sub-category": "Parlantes",
+    "image": "AURICULAR GAMER MARVO HG9053.png"
+  },
+  {
+    "id": 7,
+    "name": "CELULAR SAMSUNG GALAXY A54",
+    "description": "Celular. Pantalla: 6.4 \" super amoled 1080 x 2340 (FHD+). Procesador: Octa-Core. Almacenamiento: 128 Gb. Ram: 8Gb.",
+    "price": 286999,
+    "discount": 10,
+    "category": "Celulares",
+    "image": "CELULAR SAMSUNG GALAXY A54 SM-A546E LIME.png"
+  },
+  {
+    "id": 8,
+    "name": "CELULAR MOTOROLA RAZR 40",
+    "description": "Celular. Pantalla principal de 6.9 \", resolucion 1080 x 2640 FHD+, 413ppi, HiD, 144Hz. Tecnologia pOLED.",
+    "price": 499999,
+    "discount": 5,
+    "category": "Celulares",
+    "image": "CELULAR MOTOROLA RAZR 40 - XT2323-1 GRIS MATE.png"
+  },
+  {
+    "id": 9,
+    "name": "TABLET SAMSUNG GALAXY TAB S9 ULTRA SM-X910 14.6' 512 GB GRAPHITE",
+    "description": "Tablet. Pantalla de 14.6\" (369.9 mm), resolucion 2960x1848 (WQXGA+), Dynamic AMOLED 2X. Procesador Snapdragon 8 Gen 2 octa core (3.36GHz,2.8GHz,2GHz).",
+    "price": 1142269,
+    "discount": 15,
+    "category": "Tablets",
+    "image": "TABLET SAMSUNG GALAXY TAB S9 ULTRA SM-X910 14.6' 512 GB GRAPHITE.png"
+  },
+  {
+    "id": 10,
+    "name": "TABLET SKY DEVICES SKY-KID1 7' 16 GB AZUL",
+    "description": "Tablet. Pantalla de 7\" HD (600x1024). Procesador Cortex A7 (1.5 GHz). Capacidad 16 Gb / RAM 2 Gb. Camara principal de 5 Mp / Camara frontal de 2 Mp.",
+    "price": 44999,
+    "discount": 10,
+    "category": "Tablets",
+    "image": "TABLET SKY DEVICES SKY-KID1 7' 16 GB AZUL.png"
+    },
+    {
+        "id": 11,
+        "name": "NOTEBOOK GAMER ASUS TUF GAMING F15",
+        "description": "Notebook gamer. Pantalla de 15.6\" Pulgadas, HD. Procesador Intel Core i5-10300H (2.50 hasta 4.50GHz). Capacidad 512 Gb SSD / RAM 16 Gb.",
+        "price": 1631569,
+        "discount": 15,
+        "category": "Informatica",
+        "sub-category": "Notebook",
+        "image": "NOTEBOOK GAMER ASUS TUF GAMING F15 FX507ZC4-HN038W - 90NR0GW2-M002N0 INTEL CORE I5.png"
+    },
+    {
+        "id": 12,
+        "name": "NOTEBOOK ASUS VIVOBOOK 15",
+        "description": "Notebook. Pantalla de 15.16\" FHD (1920 x 1080) relacion de aspecto 16:9. Procesador Intel Core i7-1260P 2.1 GHz, 12 nucleos.",
+        "price": 560899,
+        "discount": 20,
+        "category": "Informatica",
+        "sub-category": "Notebook",
+        "image": "NOTEBOOK ASUS VIVOBOOK 15 - X1502ZA-EJ830W INTEL CORE I3.png"
+    },
+    {
+        "id": 13,
+        "name": "AIRE ACONDICIONADO SPLIT SURREY",
+        "description": "Aire Acondicinado. Split. Frio Calor. Potencia: 2730 W. Frigorias: 2348 Fg/H. Calorias: 2262 Kcal /h. Timer. Control Remoto.",
+        "price": 346.667,
+        "discount": 5,
+        "category": "Climatización",
+        "sub-category": "Aires",
+        "image": "AIRE ACONDICIONADO SPLIT SURREY 553GFQ1801F FRIOCALOR 4420 FRIGORIAS.png"
+    },
+    {
+        "id": 14,
+        "name": "AIRE ACONDICIONADO SPLIT SAMSUNG",
+        "description": "SPLIT FRIO CALOR INVERTER 5850WATTS EQUIVALENTE A 5031 FRIGORÍAS EN FRIO Y 6140 WATTS EQUIVALENTE A 5280 FRIGORÍAS EN CALOR.",
+        "price": 1319999,
+        "discount": 10,
+        "category": "Climatización",
+        "sub-category": "Aires",
+        "image": "AIRE ACONDICIONADO SPLIT SAMSUNG AR24BSHQAWK2BG FRIOCALOR 5031.png"
+    },
+    {
+        "id": 15,
+        "name": "TURBOVENTILADOR LILIANA",
+        "description": "Turboventilador de 18\". 3 Velocidades. Parrilla frontal y post. cromada. 3 Aspas plasticas. Super silencioso.",
+        "price": 51249,
+        "discount": 7,
+        "category": "Climatización",
+        "sub-category": "Ventiladores",
+        "image": "TURBOVENTILADOR LILIANA VTF18P.png"
+    },
+    {
+        "id": 16,
+        "name": "VENTILADOR DE PIE AXEL",
+        "description": "Ventilador industrial de pie 26\". Motor potenciado. 3 Velocidades. Oscilante. Inclinable. 2 Palas metalicas tipo avion.",
+        "price": 97369,
+        "discount": 12,
+        "category": "Climatización",
+        "sub-category": "Ventiladores",
+        "image": "VENTILADOR DE PIE AXEL AX-PIE26.png"
+    },
+    {
+        "id": 17,
+        "name": "VITROCONVECTOR PEABODY",
+        "description": "Vitroconvector. Calefaccion p/conveccion. Placa de vidrio templado. Potencia 1000/2000W. Resistencia de alto rendimiento.",
+        "price": 39999,
+        "discount": 10,
+        "category": "Climatización",
+        "sub-category": "Calefacción",
+        "image": "VITROCONVECTOR PEABODY PE-VC10N.png"
+    },
+    {
+        "id": 18,
+        "name": "CALEFACTOR SIN SALIDA ORBIS",
+        "description": "Calefactor sin salida de 4200 kcal/h. Calor envolvente. Encendido piezoelectrico. Piloto analizador de oxigeno ODS.",
+        "price": 116509,
+        "discount": 5,
+        "category": "Climatización",
+        "sub-category": "Calefacción",
+        "image": "CALEFACTOR SIN SALIDA ORBIS 4024GO.png"
+    },
+    {
+        "id": 19,
+        "name": "COCINA DREAN",
+        "description": "Cocina multigas. Plancha de acero inoxidable. Rejillas superiores de alambron niquelado. 4 Hornallas. Termostato. Horno easy clean max.",
+        "price": 301299,
+        "discount": 20,
+        "category": "Electrohogar",
+        "sub-category": "Cocinas",
+        "image": "COCINA DREAN CD5502AI.png"
+    },
+    {
+        "id": 20,
+        "name": "COCINA LONGVIE",
+        "description": "Plancha y frente de acero inoxidable. Horno autolimpiante c/ luz, valvula de seguridad y pta de vidrio templado. Multigas.",
+        "price": 361239,
+        "discount": 10,
+        "category": "Electrohogar",
+        "sub-category": "Cocinas",
+        "image": "COCINA LONGVIE 12331X.png"
+    },
+    {
+        "id": 21,
+        "name": "MICROONDAS ATMA",
+        "description": "Microondas Digital. Potencia 700W. Capacidad 20 Litros. Display LED. 5 niveles de potencia. Descongelado automatico.",
+        "price": 99999,
+        "discount": 16,
+        "category": "Electrohogar",
+        "sub-category": "Microondas",
+        "image": "MICROONDAS ATMA MATDB20CN.png"
+    },
+    {
+        "id": 22,
+        "name": "MICROONDAS PHILCO",
+        "description": "Microondas digital. 8 Menues programables. 5 Niveles de coccion. Potencia microondas 900W / potencia grill 1500W. Capacidad 28L.",
+        "price": 119999,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Microondas",
+        "image": "MICROONDAS PHILCO MPG8828N.png"
+    },
+    {
+        "id": 23,
+        "name": "HELADERA NO FROST ELECTROLUX",
+        "description": "Heladera no frost. Volumen neto 260L. Volumen bruto 265L. Ubicacion del freezer superior. Control analogico. Tecnologia inverter.",
+        "price": 362999,
+        "discount": 8,
+        "category": "Electrohogar",
+        "sub-category": "Heladeras",
+        "image": "HELADERA NO FROST ELECTROLUX HENI3000P PLATA.png"
+    },
+    {
+        "id": 24,
+        "name": "HELADERA INVERTER WHIRLPOOL",
+        "description": "HELADERA NO FROST. VOLUMEN BRUTO 625L / VOLUMEN NETO 588. UBICACION DEL FREEZER SUPERIOR. CONTROL POR PANEL TOUCH. TECONOLOGIA INVERTER.",
+        "price": 1758699,
+        "discount": 12,
+        "category": "Electrohogar",
+        "sub-category": "Heladeras",
+        "image": "HELADERA INVERTER WHIRLPOOL BOTTOM WRE85AK ACERO INOXIDABLE.png"
+    },
+    {
+        "id": 25,
+        "name": "EXHIBIDOR VERTICAL INELRO",
+        "description": "Exhibidor vertical. Volumen neto 265 litros. Compresor de ultima generacion. Controlador electronico de temperatura. Rango de temperatura: 1 a 4C",
+        "price": 542999,
+        "discount": 8,
+        "category": "Electrohogar",
+        "sub-category": "Heladeras",
+        "image": "EXHIBIDOR VERTICAL INELRO MT 12.png"
+    },
+    {
+        "id": 26,
+        "name": "LAVARROPAS AUTOMATICO DREAN",
+        "description": "Clase AAA. Cap.8 Kg. Display Led. 1200RPM. Carga Autoadaptativa. Sist.Autobalance. 35 Alternativas de lavado.",
+        "price": 394999,
+        "discount": 20,
+        "category": "Electrohogar",
+        "sub-category": "Lavarropas",
+        "image": "LAVARROPAS AUTOMATICO DREAN NEXT 10-12 P ECO 10 BLANCO.png"
+    },
+    {
+        "id": 27,
+        "name": "LAVARROPAS AUTOMATICO WHIRLPOOL",
+        "description": "Lavarropas automatico. Tecnologia inverter. Capacidad 9 Kg. 15 Programas. Eficiencia energetica A++.erior.",
+        "price": 496726,
+        "discount": 20,
+        "category": "Electrohogar",
+        "sub-category": "Lavarropas",
+        "image": "LAVARROPAS AUTOMATICO WHIRLPOOL WNQ90AS 9 GRIS OSCURO.png"
+    },
+    {
+        "id": 28,
+        "name": "LAVAVAJILLAS DREAN DISH",
+        "description": "NUEVO PANEL TACTIL DIGITAL - COLOR BLANCO - 15 CUBIERTOS - 3 CESTOS - BAJO CONSUMO DE AGUA Y ENERGÍA ",
+        "price": 573199,
+        "discount": 10,
+        "category": "Electrohogar",
+        "sub-category": "Lavavajillas",
+        "image": "LAVAVAJILLAS DREAN DISH 15.2DTB.png"
+    },
+    {
+        "id": 29,
+        "name": "LAVAVAJILLAS WHIRLPOOL",
+        "description": "LAVAVAJILLAS 10 CUBIERTOS. TECNOLOGIA INVERTER. 7 PROGRAMAS ECO 6TH SENSE INTENSIVO. ",
+        "price": 543.899,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Lavavajillas",
+        "image": "LAVAVAJILLAS WHIRLPOOL WSF03T223PXAG.png"
+    },
+    {
+        "id": 30,
+        "name": "BATIDORA DE MANO OSTER",
+        "description": "Batidora de mano 250 W. 6 Velocidades. Tazon con capacidad para 3.7 litros.",
+        "price": 33279,
+        "discount": 25,
+        "category": "Pequeños",
+        "sub-category": "Batidora",
+        "image": "BATIDORA DE MANO OSTER FPSTHS3610.png"
+    },
+    {
+        "id": 31,
+        "name": "BATIDORA PLANETARIA OSTER",
+        "description": "La batidora Oster FPSTSM3711 viene con soporte y bowl integrados, para que preparar tus tortas y masas preferidas sea más sencillo.",
+        "price": 78999,
+        "discount": 10,
+        "category": "Pequeños",
+        "sub-category": "Batidora",
+        "image": "BATIDORA PLANETARIA OSTER FPSTSM3711.png"
+    },
+    {
+        "id": 32,
+        "name": "LICUADORA CON VASO PHILIPS",
+        "description": "Licuadora con vaso. Potencia 1200W. 5 Velocidades. Jarra de plastico reforzado de 3 L de capacidad.",
+        "price": 59999,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Licuadoras",
+        "image": "LICUADORA CON VASO PHILIPS HR224000.png"
+    },
+    {
+        "id": 33,
+        "name": "LICUADORA CON VASO PEABODY",
+        "description": "Licuadora de 800w de potencia. Cuchillas de acero inoxidable desmontables. Ideal para triturar hielo.",
+        "price": 28749,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Licuadoras",
+        "image": "LICUADORA CON VASO PEABODY PE-LN1001IX.png"
+    },
+    {
+        "id": 34,
+        "name": "LICUADORA DE MANO MIDEA",
+        "description": "Microondas digital. 8 Menues programables. 5 Niveles de coccion. Potencia microondas 900W / potencia grill 1500W. Capacidad 28L.",
+        "price": 55999,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Licuadoras",
+        "image": "LICUADORA DE MANO MIDEA HB-1100X3AR1.png"
+    },
+    {
+        "id": 35,
+        "name": "LICUADORA DE MANO PHILIPS",
+        "description": "Potencia de licuado de 600 W, SpeedTouch con guía de velocidad, Fácil de limpiar, Batidor, Vaso portátil (500 ml), Apto para lavavajillas.",
+        "price": 47999,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Licuadoras",
+        "image": "LICUADORA DE MANO PHILIPS HR262480 NEGRO E INOXIDABLE.png"
+    },
+    {
+        "id": 36,
+        "name": "PAVA ELECTRICA PEABODY",
+        "description": "Jarra electrica cap. 1.7Lts. con visor medidor de agua. Potencia 2000w. Cuerpo acero inoxidable. Filtro interno.",
+        "price": 43479,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Pavas Electricas",
+        "image": "PAVA ELECTRICA PEABODY PE-KV8215S.png"
+    },
+    {
+        "id": 37,
+        "name": "PAVA ELECTRICA MOULINEX",
+        "description": "Pava electrica con 2 posiciones Mate o Te. Potencia 2400 W. Capacidad 1 litro. Indicador de nivel de agua. Selector de temperatura. Filtro removilble. Enrollacable en la base.",
+        "price": 32590,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Pavas Electricas",
+        "image": "PAVA ELECTRICA MOULINEX BY297158.png"
+    },
+    {
+        "id": 38,
+        "name": "CAFETERA NESPRESSO EXPRESS ESSENZA MINI RED + AEROCCINO 3 ROJO",
+        "description": "Essenza Mini te permite preparar un café Nespresso hasta en los espacios más reducidos. Una pequeña  máquina de café diseñada para ofrecerte momentos de café inolvidables.",
+        "price": 166590,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Cafeteras",
+        "image": "CAFETERA NESPRESSO EXPRESS ESSENZA MINI RED + AEROCCINO 3 ROJO.png"
+    },
+    {
+        "id": 39,
+        "name": "CAFETERA LILIANA AC960 NEGRO",
+        "description": "Mantiene la temperatura. Filtro removible y lavable. Válvula antigoteo. Luz indicadora de encendido. Base antideslizante. ",
+        "price": 24199,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Cafeteras",
+        "image": "CAFETERA LILIANA AC960 NEGRO.png"
+    },
+    {
+        "id": 40,
+        "name": "TOSTADORA PHILCO TO20WPP",
+        "description": "LA TOSTADORA PHILCO TO20WPP PRESENTA UN DISEÑO MODERNO CON BANDEJA RECOLECTORA DE MIGAS. CUENTA CON UNA POTENCIA DE 700 WATTS. ",
+        "price": 21189,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Tostadoras",
+        "image": "TOSTADORA PHILCO TO20WPP.png"
+    },
+    {
+        "id": 41,
+        "name": "TOSTADORA MIDEA BT-PM2BAR1",
+        "description": "Tostadora 2 ranuras. 6 niveles de tostado. Funciones descongelar - recalentar - cancelar. Bandeja recolectora de migas. Extra elevacion para sacar el pan mas facil.",
+        "price": 20899,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Tostadoras",
+        "image": "TOSTADORA MIDEA BT-PM2BAR1.png"
+    },
+    {
+        "id": 42,
+        "name": "SANDWICHERA ATMA SM8911E",
+        "description": "Capacidad: 2 sandwiches - Placas: cuadrada - Superficie Antiadherente - Almacenamiento vertical - Indicador luminoso Soportes antideslizantes.",
+        "price": 18979,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Sandwicheras",
+        "image": "SANDWICHERA ATMA SM8911E.png"
+    },
+    {
+        "id": 43,
+        "name": "WAFFLERA ULTRACOMB",
+        "description": "Waflera. Potencia 850W. Placas con recubrimiento antiadherente, para un facil desmolde y limpieza. Termostato automatico.",
+        "price": 22509,
+        "discount": 5,
+        "category": "Electrohogar",
+        "sub-category": "Waffleras",
+        "image": "WAFFLERA ULTRACOMB.png"
+    },
+    {
+        "id": 44,
+        "name": "ASPIRADORA SIN BOLSA MIDEA VS-S214TAR3",
+        "description": "Aspiradora sin bolsa. Potencia 1400W. Ciclonica: La tecnologia Direct Cyclone permite un alto poder de limpieza.",
+        "price": 78999,
+        "discount": 5,
+        "category": "Pequeños Hogar",
+        "sub-category": "Aspiradora",
+        "image": "ASPIRADORA SIN BOLSA MIDEA VS-S214TAR3.png"
+    },
+    {
+        "id": 45,
+        "name": "ASPIRADORA ROBOT DAEWOO DELTA DW-RVDE-1KN",
+        "description": "Aspiradora robot. Sensor anticaida. Funcion trapeado seco. Carga adaptador. Autonomia 90-120 minutos.",
+        "price": 142799,
+        "discount": 5,
+        "category": "Pequeños Hogar",
+        "sub-category": "Aspiradora",
+        "image": "ASPIRADORA ROBOT DAEWOO DELTA DW-RVDE-1KN.png"
+    },
+    {
+        "id": 46,
+        "name": "ASPIRADORA DE MANO DAEWOO DAVC 200LI",
+        "description": "Aspiradora de mano. Bateria de Litio. Potencia de 94 W. Capacidad recolector de polvo 0.39 litros.",
+        "price": 51020,
+        "discount": 5,
+        "category": "Pequeños Hogar",
+        "sub-category": "Aspiradora",
+        "image": "ASPIRADORA DE MANO DAEWOO DAVC 200LI.png"
+    },
+    {
+        "id": 47,
+        "name": "MAQUINA DE COSER SINGER STARLET 6699",
+        "description": "Ideal para realizar Quilting y Patchwork - Máquina electrónica - Brazo libre - 100 Puntadas diferentes - 6 diseños distintos de ojal automático en un solo paso.",
+        "price": 505449,
+        "discount": 5,
+        "category": "Pequeños Hogar",
+        "sub-category": "Maquinas de Coser",
+        "image": "MAQUINA DE COSER SINGER STARLET 6699.png"
+    },
+    {
+        "id": 48,
+        "name": "MAQUINA DE COSER SINGER M3305C",
+        "description": "Maquina para coser mecanica. 22 Puntadas decorativas. Enhebrador de hilo en aguja Ojalador en un solo paso.",
+        "price": 301059,
+        "discount": 5,
+        "category": "Pequeños Hogar",
+        "sub-category": "Maquinas de Coser",
+        "image": "MAQUINA DE COSER SINGER M3305C.png"
+    }
+
+]
