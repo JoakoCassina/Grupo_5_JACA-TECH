@@ -20,8 +20,6 @@ const upload = multer({ storage: storage });
 
 const productControllers = require ('../controllers/productControllers');
 
-
-
 routes.get('/productDetail/:id', productControllers.detail);
 routes.get('/productCart', productControllers.cart);
 
@@ -30,5 +28,9 @@ routes.post('/create',upload.single('img'), productControllers.store);
 
 routes.get('/:id/edit', productControllers.edit);
 routes.put('/:id/edit', productControllers.update);
+
+routes.delete('/:id/delete', productControllers.destroy);
+
+
 
 module.exports = routes;

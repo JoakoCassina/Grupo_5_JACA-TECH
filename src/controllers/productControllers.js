@@ -30,14 +30,23 @@ const controller = {
 		res.render('productEdit', { productEdit: product });
 	},
     update: (req, res) => {
-		const indexProduct = products.findIndex((product) => product.id == req.params.id);
+		//console.log(req.body, req.params, 'request')
+		const indexProduct = products.findIndex((product) => product.id == parseInt(req.params.id));
+		//console.log(indexProduct, 'producto encontrado')
 		products[indexProduct] = {
 			...products[indexProduct],
-			...req.body
+			...req.body,
 		};
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 4));
 		res.redirect('/list');
-    }
+    },
+	destroy: (req, res) => {
+		// Do the magic
+		const indexProduct = products.findIndex((product) => product.id == req.params.id);
+		products.splice(indexProduct, 1);
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+		res.redirect('/list');
+	}
 
 };
 

@@ -13,7 +13,9 @@
                         </div>
                         <button type="submit">Agregar al carrito</button>
                         <a href="/product/<%= locals.product?.id %>/edit">Editar Producto</a>
-                        <button type="submit">Eliminar</button>
+                        <form action="/product/<%= locals.product?.id %>/delete?_method=DELETE" method="post">
+                            <button type="submit">Eliminar</button>
+                        </form>
                         <div class="price">
                             <p><%= locals.product?.price%></p>
                             <p>$<%= product.price - (product.price * product.discount / 100) %></p>
