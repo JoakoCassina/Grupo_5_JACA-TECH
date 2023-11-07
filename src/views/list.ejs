@@ -2,13 +2,10 @@
 
 <body class="background">
     <%- include('partials/header') %>
-    <main class="home">
-        <div>
-            <img class="banner" src="/img/Banner Home.png" alt="banner">
-        </div>
-        <h2 class="title_home">Ofertas hasta 50%OFF</h2>
+    <main>
+        <h2 class="title_list">Listado de Productos</h2>
         <div class="article_tablet">
-            <% locals.offers && offers.forEach(product => { %>
+            <% locals.products && products.forEach(product => { %>
             <article class="product">
                 <a href="/product/productDetail/<%= product.id %>"><img src="/img/<%= product.image %>" alt="imagen de producto"></a>
                 <div class="card_description">

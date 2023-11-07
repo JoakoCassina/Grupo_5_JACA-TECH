@@ -51,3 +51,9 @@ Creacion de vistas de formularios de carga y edición de productos. Finalizació
 # Sprint 4
 25/10/2023
 Retrospectiva del sprint 3.
+
+04/11/2023
+Creamos las funcionalidades de los formularios de creacion y edicion de productos.
+
+06/11/2023
+Creacion de funcionalidad del formulario de Edicion (delete).
