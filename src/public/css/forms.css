@@ -122,6 +122,26 @@ div.consentimiento a {
     color: #2f2989;
     text-decoration: none;
 }
+div.forms div.input-box select.selectCategory {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #2f2989;
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding-left: 20px;
+    
+}
+div.forms div.input-box select.selectCategory option {
+    border: 2px solid #2f2989;
+    border-radius: 40px;
+    color: white;
+    background-color: #2f2989;
+}
+
 
 
 @media (min-width: 481px) {
