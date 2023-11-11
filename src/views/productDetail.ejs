@@ -2,34 +2,40 @@
 
     <body class="background">
         <%- include('partials/header') %>
-            <main>
+            <main class="cardDetail">
                 <section class="pDetail">
                     <div class="pdImages">
                         <img src="/img/<%= locals.product?.image%>" alt="producto">
                     </div>
+                    
                     <div class="pdDescription">
                         <div class="name">
                             <%= locals.product?.name%>
                         </div>
-                        <button type="submit">Agregar al carrito</button>
-                        <a href="/product/<%= locals.product?.id %>/edit">Editar Producto</a>
-                        <form action="/product/<%= locals.product?.id %>/delete?_method=DELETE" method="post">
-                            <button type="submit">Eliminar</button>
-                        </form>
                         <div class="price">
-                            <p><%= locals.product?.price%></p>
-                            <p>$<%= product.price - (product.price * product.discount / 100) %></p>
+                            <p class="productPrice">$<%= locals.product?.price%></p>
+                            <p class="price-end">$<%= product.price - (product.price * product.discount / 100) %></p>
                         </div>
                         <div class="options">
                             <ul>
-                                <li><a href="#"><i class="far fa-credit-card"></i> Formas de pago</a></li>
+                                <li><a href="#"><i class="far fa-credit-card"></i> Todas las formas de pago</a></li>
+                                <li><a href="#"><i class="fas fa-shipping-fast"></i></i> Envíos a todo el pais</a></li>
                                 <li><a href="#"><i class="fas fa-store"></i></i> Retiro en sucursal</a></li>
-                                <li><a href="#"><i class="fas fa-shipping-fast"></i></i> Envíos</a></li>
                             </ul>
                         </div>
                         <div class="description">
                             <%= locals.product?.description%>
                         </div>
+                        <div class="buttons">
+                            <button type="submit">Agregar al carrito</button>
+                            <div class="buttonEdit">
+                                <button><a href="/product/<%= locals.product?.id %>/edit">Editar producto</a></button>
+                            <form action="/product/<%= locals.product?.id %>/delete?_method=DELETE" method="post">
+                                <button type="submit">Eliminar</button>
+                            </form>
+                            </div>
+                        </div>
+
                     </div>
                 </section>
             </main>
