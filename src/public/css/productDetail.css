@@ -144,4 +144,11 @@ main section div.buttonEdit button a {
     .pdDescription button{
         padding: 10px;
     }
+    section.pDetail {
+        flex-direction: row;
+    }
+    section.pDetail .pdImages,
+    section.pDetail .pdDescription {
+        flex: 1;
+    }
 }
