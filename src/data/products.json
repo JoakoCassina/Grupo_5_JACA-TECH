@@ -26,7 +26,7 @@
     "price": 10999,
     "discount": 5,
     "category": "Audio",
-    "sub-category": "Parlantes",
+    "subCategory": "Parlantes",
     "image": "PARLANTES NOGANET NG-92P.png"
   },
   {
@@ -36,7 +36,7 @@
     "price": 36499,
     "discount": 20,
     "category": "Audio",
-    "sub-category": "Parlantes",
+    "subCategory": "Parlantes",
     "image": "PARLANTE PHILCO DJP11P.png"
   },
   {
@@ -46,7 +46,7 @@
     "price": 8799,
     "discount": 0,
     "category": "Audio",
-    "sub-category": "Auriculares",
+    "subCategory": "Auriculares",
     "image": "AURICULAR DAEWOO DW-PR431SI.png"
   },
   {
@@ -56,7 +56,7 @@
     "price": 79069,
     "discount": 0,
     "category": "Audio",
-    "sub-category": "Parlantes",
+    "subCategory": "Parlantes",
     "image": "AURICULAR GAMER MARVO HG9053.png"
   },
   {
@@ -102,7 +102,7 @@
     "price": 1631569,
     "discount": 15,
     "category": "Informatica",
-    "sub-category": "Notebook",
+    "subCategory": "Notebook",
     "image": "NOTEBOOK GAMER ASUS TUF GAMING F15 FX507ZC4-HN038W - 90NR0GW2-M002N0 INTEL CORE I5.png"
   },
   {
@@ -112,7 +112,7 @@
     "price": 560899,
     "discount": 20,
     "category": "Informatica",
-    "sub-category": "Notebook",
+    "subCategory": "Notebook",
     "image": "NOTEBOOK ASUS VIVOBOOK 15 - X1502ZA-EJ830W INTEL CORE I3.png"
   },
   {
@@ -122,7 +122,7 @@
     "price": 346.667,
     "discount": 5,
     "category": "Climatización",
-    "sub-category": "Aires",
+    "subCategory": "Aires",
     "image": "AIRE ACONDICIONADO SPLIT SURREY 553GFQ1801F FRIOCALOR 4420 FRIGORIAS.png"
   },
   {
@@ -132,7 +132,7 @@
     "price": 1319999,
     "discount": 10,
     "category": "Climatización",
-    "sub-category": "Aires",
+    "subCategory": "Aires",
     "image": "AIRE ACONDICIONADO SPLIT SAMSUNG AR24BSHQAWK2BG FRIOCALOR 5031.png"
   },
   {
@@ -142,7 +142,7 @@
     "price": 51249,
     "discount": 7,
     "category": "Climatización",
-    "sub-category": "Ventiladores",
+    "subCategory": "Ventiladores",
     "image": "TURBOVENTILADOR LILIANA VTF18P.png"
   },
   {
@@ -152,7 +152,7 @@
     "price": 97369,
     "discount": 12,
     "category": "Climatización",
-    "sub-category": "Ventiladores",
+    "subCategory": "Ventiladores",
     "image": "VENTILADOR DE PIE AXEL AX-PIE26.png"
   },
   {
@@ -162,7 +162,7 @@
     "price": 39999,
     "discount": 10,
     "category": "Climatización",
-    "sub-category": "Calefacción",
+    "subCategory": "Calefacción",
     "image": "VITROCONVECTOR PEABODY PE-VC10N.png"
   },
   {
@@ -172,7 +172,7 @@
     "price": 116509,
     "discount": 5,
     "category": "Climatización",
-    "sub-category": "Calefacción",
+    "subCategory": "Calefacción",
     "image": "CALEFACTOR SIN SALIDA ORBIS 4024GO.png"
   },
   {
@@ -182,7 +182,7 @@
     "price": 301299,
     "discount": 20,
     "category": "Electrohogar",
-    "sub-category": "Cocinas",
+    "subCategory": "Cocinas",
     "image": "COCINA DREAN CD5502AI.png"
   },
   {
@@ -192,7 +192,7 @@
     "price": 361239,
     "discount": 10,
     "category": "Electrohogar",
-    "sub-category": "Cocinas",
+    "subCategory": "Cocinas",
     "image": "COCINA LONGVIE 12331X.png"
   },
   {
@@ -202,7 +202,7 @@
     "price": 99999,
     "discount": 16,
     "category": "Electrohogar",
-    "sub-category": "Microondas",
+    "subCategory": "Microondas",
     "image": "MICROONDAS ATMA MATDB20CN.png"
   },
   {
@@ -212,7 +212,7 @@
     "price": 119999,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Microondas",
+    "subCategory": "Microondas",
     "image": "MICROONDAS PHILCO MPG8828N.png"
   },
   {
@@ -222,7 +222,7 @@
     "price": 362999,
     "discount": 8,
     "category": "Electrohogar",
-    "sub-category": "Heladeras",
+    "subCategory": "Heladeras",
     "image": "HELADERA NO FROST ELECTROLUX HENI3000P PLATA.png"
   },
   {
@@ -232,7 +232,7 @@
     "price": 1758699,
     "discount": 12,
     "category": "Electrohogar",
-    "sub-category": "Heladeras",
+    "subCategory": "Heladeras",
     "image": "HELADERA INVERTER WHIRLPOOL BOTTOM WRE85AK ACERO INOXIDABLE.png"
   },
   {
@@ -242,7 +242,7 @@
     "price": 542999,
     "discount": 8,
     "category": "Electrohogar",
-    "sub-category": "Heladeras",
+    "subCategory": "Heladeras",
     "image": "EXHIBIDOR VERTICAL INELRO MT 12.png"
   },
   {
@@ -252,7 +252,7 @@
     "price": 394999,
     "discount": 20,
     "category": "Electrohogar",
-    "sub-category": "Lavarropas",
+    "subCategory": "Lavarropas",
     "image": "LAVARROPAS AUTOMATICO DREAN NEXT 10-12 P ECO 10 BLANCO.png"
   },
   {
@@ -262,7 +262,7 @@
     "price": 496726,
     "discount": 20,
     "category": "Electrohogar",
-    "sub-category": "Lavarropas",
+    "subCategory": "Lavarropas",
     "image": "LAVARROPAS AUTOMATICO WHIRLPOOL WNQ90AS 9 GRIS OSCURO.png"
   },
   {
@@ -272,7 +272,7 @@
     "price": 573199,
     "discount": 0,
     "category": "Electrohogar",
-    "sub-category": "Lavavajillas",
+    "subCategory": "Lavavajillas",
     "image": "LAVAVAJILLAS DREAN DISH 15.2DTB.png"
   },
   {
@@ -282,7 +282,7 @@
     "price": 543.899,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Lavavajillas",
+    "subCategory": "Lavavajillas",
     "image": "LAVAVAJILLAS WHIRLPOOL WSF03T223PXAG.png"
   },
   {
@@ -292,7 +292,7 @@
     "price": 33279,
     "discount": 0,
     "category": "Pequeños",
-    "sub-category": "Batidora",
+    "subCategory": "Batidora",
     "image": "BATIDORA DE MANO OSTER FPSTHS3610.png"
   },
   {
@@ -302,7 +302,7 @@
     "price": 78999,
     "discount": 10,
     "category": "Pequeños",
-    "sub-category": "Batidora",
+    "subCategory": "Batidora",
     "image": "BATIDORA PLANETARIA OSTER FPSTSM3711.png"
   },
   {
@@ -312,7 +312,7 @@
     "price": 59999,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Licuadoras",
+    "subCategory": "Licuadoras",
     "image": "LICUADORA CON VASO PHILIPS HR224000.png"
   },
   {
@@ -322,7 +322,7 @@
     "price": 28749,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Licuadoras",
+    "subCategory": "Licuadoras",
     "image": "LICUADORA CON VASO PEABODY PE-LN1001IX.png"
   },
   {
@@ -332,7 +332,7 @@
     "price": 55999,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Licuadoras",
+    "subCategory": "Licuadoras",
     "image": "LICUADORA DE MANO MIDEA HB-1100X3AR1.png"
   },
   {
@@ -342,7 +342,7 @@
     "price": 47999,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Licuadoras",
+    "subCategory": "Licuadoras",
     "image": "LICUADORA DE MANO PHILIPS HR262480 NEGRO E INOXIDABLE.png"
   },
   {
@@ -352,7 +352,7 @@
     "price": 43479,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Pavas Electricas",
+    "subCategory": "Pavas Electricas",
     "image": "PAVA ELECTRICA PEABODY PE-KV8215S.png"
   },
   {
@@ -362,7 +362,7 @@
     "price": 32590,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Pavas Electricas",
+    "subCategory": "Pavas Electricas",
     "image": "PAVA ELECTRICA MOULINEX BY297158.png"
   },
   {
@@ -372,7 +372,7 @@
     "price": 166590,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Cafeteras",
+    "subCategory": "Cafeteras",
     "image": "CAFETERA NESPRESSO EXPRESS ESSENZA MINI RED + AEROCCINO 3 ROJO.png"
   },
   {
@@ -382,7 +382,7 @@
     "price": 24199,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Cafeteras",
+    "subCategory": "Cafeteras",
     "image": "CAFETERA LILIANA AC960 NEGRO.png"
   },
   {
@@ -392,7 +392,7 @@
     "price": 21189,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Tostadoras",
+    "subCategory": "Tostadoras",
     "image": "TOSTADORA PHILCO TO20WPP.png"
   },
   {
@@ -402,7 +402,7 @@
     "price": 20899,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Tostadoras",
+    "subCategory": "Tostadoras",
     "image": "TOSTADORA MIDEA BT-PM2BAR1.png"
   },
   {
@@ -412,7 +412,7 @@
     "price": 18979,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Sandwicheras",
+    "subCategory": "Sandwicheras",
     "image": "SANDWICHERA ATMA SM8911E.png"
   },
   {
@@ -422,7 +422,7 @@
     "price": 22509,
     "discount": 5,
     "category": "Electrohogar",
-    "sub-category": "Waffleras",
+    "subCategory": "Waffleras",
     "image": "WAFFLERA ULTRACOMB.png"
   },
   {
@@ -432,7 +432,7 @@
     "price": 78999,
     "discount": 5,
     "category": "Pequeños Hogar",
-    "sub-category": "Aspiradora",
+    "subCategory": "Aspiradora",
     "image": "ASPIRADORA SIN BOLSA MIDEA VS-S214TAR3.png"
   },
   {
@@ -452,7 +452,7 @@
     "price": 51020,
     "discount": 5,
     "category": "Pequeños Hogar",
-    "sub-category": "Aspiradora",
+    "subCategory": "Aspiradora",
     "image": "ASPIRADORA DE MANO DAEWOO DAVC 200LI.png"
   },
   {
@@ -462,7 +462,7 @@
     "price": 505449,
     "discount": 5,
     "category": "Pequeños Hogar",
-    "sub-category": "Maquinas de Coser",
+    "subCategory": "Maquinas de Coser",
     "image": "MAQUINA DE COSER SINGER STARLET 6699.png"
   },
   {
@@ -472,7 +472,7 @@
     "price": 301059,
     "discount": 5,
     "category": "Pequeños Hogar",
-    "sub-category": "Maquinas de Coser",
+    "subCategory": "Maquinas de Coser",
     "image": "MAQUINA DE COSER SINGER M3305C.png"
   }
 ]

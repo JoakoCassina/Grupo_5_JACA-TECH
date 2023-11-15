@@ -32,3 +32,22 @@
 
 **Dejar de hacer:** 
     procrastinar.
+
+
+
+# RETRO SPRINT 4
+
+**Comenzar a hacer:**
+    profundizar conocimientos de rutas para llevar a cabo el proximo Sprint.
+
+**Hacer más:**
+    pair programming para definir la logica entre todos y que todos la comprendamos.
+
+**Continuar haciendo:**
+    trabajar en conjunto, coordinar y repasar.
+
+**Hacer menos:**
+    hacer todas las tareas en un solo dia.
+
+**Dejar de hacer:** 
+    procrastinar.

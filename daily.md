@@ -57,3 +57,12 @@ Creamos las funcionalidades de los formularios de creacion y edicion de producto
 
 06/11/2023
 Creacion de funcionalidad del formulario de Edicion (delete).
+
+10/11/2023
+Ajustes de estilos (productDetail).
+
+15/11/2023
+Creacion de users.json y retro del 4to sprint.
+
+
+# Sprint 5
