@@ -1,84 +1,123 @@
-
-.productDetail main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 200px;
+.cardDetail {
+    padding: 50px;
 }
 section.pDetail{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     width: auto; 
-    margin-bottom: 150px;  
+    margin-bottom: 150px;
+    border-radius: 40px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 5);
 }
 .pdImages{
-    position: relative;
-    background-color: #fff;
     margin: 10px;
-    width: 60%;
-    border-radius: 5px;
-    max-width: 500px;
+    max-width: 100%;
 }
 .pdImages img{
     width: 100%;
     padding: 30px;
 }
-.pdDescription,
-.pdImages{
-    box-shadow: 0 0 6px rgba(0, 0, 0, 5);
-}
+
 .pdDescription{
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
-    width: 60%;
     justify-content: space-between;
     padding: 5px;
 }
 .pdDescription div.name{
-    width: 60%;
+    width: 100%;
     color: #fff;
     font-weight: 500;
     margin-bottom: 5px;
+    text-align: center;
 }
-.pdDescription div.price{
-    color: #fff;
-    font-weight: 500;
+.pdDescription div.price {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
     width: 100%;
+    align-items: center;
 }
-.pdDescription button{
-    font-weight: 600;
-    width: 40%;
-    border: none;
-    border-radius: 40px;
-    color: #2f2989;
-    outline: none;
-    cursor:pointer;
-    transition: 300ms;
-    max-width: 170px;
+.pdDescription div p.productPrice{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    text-decoration: line-through;
+    color: #ffffff;
 }
-.pdDescription button:hover{
-    background-color: #2f2989;
-    color: white;
+.pdDescription div p.price-end {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    color: #0D512A;
+    font-weight: 700;
 }
-.pdDescription div.description{
-    margin-top: 15px;
-    color: #2f2989;
-    text-align: justify;
-}
-
 .pdDescription div.options{
-    display: none;
+    width: 100%;
+    text-align: center;
+    margin: auto;
 }
 .pdDescription div.options ul li{
     list-style-type: none;
 }
 .pdDescription div.options ul li a{
     text-decoration: none;
+    font-size: 1rem;
 }
+.pdDescription div.description{
+    margin-top: 15px;
+    color: #fff;
+    text-align: justify;
+    padding: 10px;
+}
+
+.pdDescription div.buttons {
+    margin: auto;
+    text-align: center;
+}
+.pdDescription div.buttons button {
+    font-size: 1.2rem;
+    margin: 5px;
+
+    width: 100%;
+    border: none;
+    color: #2f2989;
+    cursor:pointer;
+    transition: 300ms;
+}
+.pdDescription div.buttons button:hover{
+    background-color: #2f2989;
+    color: white;
+}
+main section form button {
+ padding: 10px;
+}
+main section div.buttonEdit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    padding: 20px;
+    
+}
+main section div.buttonEdit button,
+.pdDescription div.buttons button {
+    background-color: white;
+    border-radius: 40px;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+main section div.buttonEdit button a {
+    text-decoration: none;
+    color: #2f2989;
+}
+.pdDescription div.buttonEdit button a:hover{
+    background-color: #2f2989;
+    color: white;
+}
+
+
 
 @media (min-width: 769px){
     .pdDescription{
@@ -104,5 +143,12 @@ section.pDetail{
     }
     .pdDescription button{
         padding: 10px;
+    }
+    section.pDetail {
+        flex-direction: row;
+    }
+    section.pDetail .pdImages,
+    section.pDetail .pdDescription {
+        flex: 1;
     }
 }
