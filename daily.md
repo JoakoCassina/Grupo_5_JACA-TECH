@@ -66,3 +66,5 @@ Creacion de users.json y retro del 4to sprint.
 
 
 # Sprint 5
+18/11/2023
+Implementacion del registro de usuarios.

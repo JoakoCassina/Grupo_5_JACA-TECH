@@ -1,52 +1,105 @@
 <%- include('partials/head', { styles: ['forms'] }) %>
-<body class="background">
-    <%- include('partials/header') %>
-    <main class="main_form">
-        <div class="forms">
-            <form method="post">
-                <div>
-                    <h1>Datos Personales</h1>
-                    <div class="input-box">
-                        <input type="text" placeholder="Nombre" required name="Name">
-                    </div>
-                    <div class="input-box">
-                        <input type="text" placeholder="Apellido" required name="LastName">
-                    </div>
-                    <div class="input-box">
-                        <input type="email" placeholder="Email" required name="Email">
-                    </div>
-                    <div class="input-box">
-                        <input type="date" required name="Birthdate">
-                    </div>
-                    <div class="input-box">
-                        <input type="number" placeholder="Codigo Postal" required name="CP">
-                    </div>
-                </div>
-                <div>
-                    <h1>Datos de Acceso</h1>
-                    <div class="input-box">
-                        <input type="text" placeholder="Nombre de Usuario" required name="UserName">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="password" placeholder="Contraseña" required name="Password">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="password" placeholder="Confirmar Contraseña" required name="ConfirmPassw">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="consentimiento">
-                        <label><input type="checkbox" name="Concentimiento">He leido y acepto los</label>
-                        <a href="#">terminos y condiciones de Usuario</a>
-                    </div>
-                    <button type="submit">Crear cuenta</button>
-                    <button type="reset">Limpiar Formulario</button>
-                </div>
-            </form>
-        </div>
-    </main>
-    <%- include('partials/footer') %>
-</body>
 
-</html>
+    <body class="background">
+        <%- include('partials/header') %>
+            <main class="main_form">
+                <div class="forms">
+                    <form action="/user/register" method="post" enctype="multipart/form-data">
+                        <div>
+                            <h1>Datos Personales</h1>
+                            <div class="input-box">
+                                <input type="text" placeholder="Nombre" name="name" value="<%= (locals.oldData && oldData.name) && oldData.name %>">
+                                <% if (locals.errors && errors.name) { %>
+                                    <span class="error">
+                                        <%= errors.name.msg %>
+                                    </span>
+                                    <% } %>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" placeholder="Apellido" name="lastName"
+                                    value="<%= (locals.oldData && oldData.lastName) && oldData.lastName %>">
+                                <% if (locals.errors && errors.lastName) { %>
+                                    <span class="error">
+                                        <%= errors.lastName.msg %>
+                                    </span>
+                                    <% } %>
+                            </div>
+                            <div class="input-box">
+                                <input type="email" placeholder="Email" name="email"
+                                    value="<%= (locals.oldData && oldData.email) && oldData.email %>">
+                                <% if (locals.errors && errors.email) { %>
+                                    <span class="error">
+                                        <%= errors.email.msg %>
+                                    </span>
+                                    <% } %>
+                            </div>
+                            <div class="input-box">
+                                <select name="category" id="cmbCategory" value="<%= (locals.oldData && oldData.category) && oldData.category %>">
+                                    <option value="">Selecciona categoria</option>
+                                    <option value="admin" <%=(locals.oldData && oldData.category==='admin' ) && 'selected' %>
+                                        >Administrador</option>
+                                    <option value="cliente" <%=(locals.oldData && oldData.category==='cliente' ) && 'selected' %>
+                                        >Cliente</option>    
+                                </select>
+                                <% if (locals.errors && errors.category) { %>
+                                    <span class="error">
+                                        <%= errors.category.msg %>
+                                    </span>
+                                    <% } %>
+                            </div>
+                            <div class="input-box">
+                                <input type="file" name="image">
+                                <% if (locals.errors && errors.image) { %>
+                                    <span class="error">
+                                        <%= errors.image.msg %>
+                                    </span>
+                                    <% } %>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>Datos de Acceso</h1>
+                            <div class="input-box">
+                                <input type="text" placeholder="Nombre de Usuario" name="userName"
+                                    value="<%= (locals.oldData && oldData.userName) && oldData.userName %>">
+                                <% if (locals.errors && errors.userName) { %>
+                                    <span class="error">
+                                        <%= errors.userName.msg %>
+                                    </span>
+                                    <% } %>
+                                        <i class="fas fa-oldData"></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Contraseña" name="password"
+                                    value="<%= (locals.oldData && oldData.password) && oldData.password %>">
+                                <i class="fas fa-lock"></i>
+                                <% if (locals.errors && errors.password) { %>
+                                    <span class="error">
+                                        <%= errors.password.msg %>
+                                    </span>
+                                    <% } %>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Confirmar Contraseña" name="confirmPass"
+                                    value="<%= (locals.oldData && oldData.confirmPass) && oldData.confirmPass %>">
+                                <i class="fas fa-lock"></i>
+                                <% if (locals.errors && errors.confirmPass) { %>
+                                    <span class="error">
+                                        <%= errors.confirmPass.msg %>
+                                    </span>
+                                    <% } %>
+
+                            </div>
+                            <div class="consentimiento">
+                                <label><input type="checkbox" name="Concentimiento">He leido y acepto los</label>
+                                <a href="#">terminos y condiciones de Usuario</a>
+                            </div>
+                            <button type="submit">Crear cuenta</button>
+                            <button type="reset">Limpiar Formulario</button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <%- include('partials/footer') %>
+    </body>
+
+    </html>

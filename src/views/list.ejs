@@ -7,7 +7,7 @@
         <div class="article_tablet">
             <% locals.products && products.forEach(product => { %>
             <article class="product">
-                <a href="/product/productDetail/<%= product.id %>"><img src="/img/<%= product.image %>" alt="imagen de producto"></a>
+                <a href="/product/productDetail/<%= product.id %>"><img src="/img/productos/<%= product.image %>" alt="imagen de producto"></a>
                 <div class="card_description">
                     <h4 class="home_description"><%= product.name %></h4>
                     <div>

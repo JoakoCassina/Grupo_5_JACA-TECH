@@ -141,6 +141,12 @@ div.forms div.input-box select.selectCategory option {
     color: white;
     background-color: #2f2989;
 }
+.error {
+    color: #0D512A;
+    font-size: small;
+    margin-left: 20px;
+    font-weight: 600;
+}
 
 
 

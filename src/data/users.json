@@ -2,37 +2,45 @@
     {
         "id": 1,
         "name": "Celia",
-        "lastname": "Gallay",
+        "lastName": "Gallay",
         "email": "celiagallay@gmail.com",
         "password": "celia123",
+        "confirmPass": "celia123",
         "category": "admin",
-        "image":"default.jpg"
+        "userName": "Celia1",
+        "image": "default.jpg"
     },
     {
         "id": 2,
         "name": "Alejandro",
-        "lastname": "Seravalle",
+        "lastName": "Seravalle",
         "email": "aleseravalle@gmail.com",
         "password": "alejandro123",
+        "confirmPass": "alejandro123",
         "category": "admin",
-        "image":"default.jpg"
+        "userName": "Ale1",
+        "image": "default.jpg"
     },
     {
         "id": 3,
         "name": "Joaquin",
-        "lastname": "Cassina",
+        "lastName": "Cassina",
         "email": "joaquincassina@gmail.com",
         "password": "joaquin123",
+        "confirmPass": "joaquin123",
         "category": "admin",
-        "image":"default.jpg"
+        "userName": "Joako1",
+        "image": "default.jpg"
     },
     {
         "id": 4,
         "name": "Agustin",
-        "lastname": "Beninca",
+        "lastName": "Beninca",
         "email": "agustinbeninca2@gmail.com",
         "password": "agustin123",
+        "confirmPass": "agustin123",
         "category": "admin",
-        "image":"default.jpg"
+        "userName": "Agus1",
+        "image": "default.jpg"
     }
 ]
