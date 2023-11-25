@@ -4,9 +4,9 @@ const uploadValidator = [
     body('name').notEmpty().withMessage('El nombre es requerido'),
     body('lastName').notEmpty().withMessage('El apellido es requerido'),
     body('email').notEmpty().withMessage('El E-mail es requerido')
-        .isEmail().withMessage('Ingresa un E-mail Valido'),
+        .isEmail().withMessage('Ingresa un E-mail Válido'),
     body('userName').notEmpty().withMessage('El nombre de usuario es requerido'),
-    body('password').notEmpty().withMessage('La contraseña es requerido'),
+    body('password').notEmpty().withMessage('La contraseña es requerida'),
     body('confirmPass').notEmpty().withMessage('Las contraseñas deben coincidir'),
     body('category').notEmpty().withMessage('El campo es requerido'),
     body('image').custom((value, {req}) => {
@@ -16,9 +16,15 @@ const uploadValidator = [
         }
         return true;
     }),
-    
 ];
 
+const loginValidator = [
+    body('email').notEmpty().withMessage('El E-mail es requerido')
+        .isEmail().withMessage('Ingresa un E-mail Válido'),
+    body('password').notEmpty().withMessage('La contraseña es requerida')
+]
+
 module.exports = {
-    uploadValidator
+    uploadValidator,
+    loginValidator
 };

@@ -3,21 +3,31 @@
     <%- include('partials/header') %>
     <main class="main_form">
         <div class="forms">
-            <form method="post">
-                <h1>Inicio de Sesion</h1>
+            <form action="/user/login" method="post">
+                <h1>Login</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Nombre de Usuario" required name="UserName">
+                    <input type="email" placeholder="E-mail" name="email">
                     <i class="fas fa-user"></i>
+                    <% if (locals.errors && errors.email) { %>
+                        <span class="error">
+                            <%= errors.email.msg %>
+                        </span>
+                    <% } %>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Contraseña" required name="Password">
+                    <input type="password" placeholder="Contraseña" name="password">
                     <i class="fas fa-lock"></i>
+                    <% if (locals.errors && errors.password) { %>
+                        <span class="error">
+                            <%= errors.password.msg %>
+                        </span>
+                    <% } %>
                 </div>
                 <div class="remember">
                     <label><input type="checkbox" name="remember">Mantener sesion iniciada</label>
                     <a href="#">¿Olvido su contraseña?</a>
                 </div>
-                <button>Iniciar</button>
+                <button>Iniciar sesión</button>
                 <div class="register_link">
                     <a href="/user/register">Crea tu cuenta</a>
                 </div>

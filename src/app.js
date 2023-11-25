@@ -2,16 +2,27 @@ const express = require('express');
 const path = require('path')
 const app = express();
 const methodOverride =  require('method-override');
+const session = require('express-session');
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware')
 
 const mainRoutes = require('./routes/main');
 const productRoutes = require('./routes/product');
 const userRoutes = require('./routes/user');
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.urlencoded({ extended: false }));
 
 app.use(methodOverride('_method'));
+
+app.use(session({
+    secret: "12345",
+    resave: false,
+    saveUninitialized: false
+}));
+
+app.use(userLoggedMiddleware);
 
 app.use('/', mainRoutes);
 

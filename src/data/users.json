@@ -1,46 +1,24 @@
 [
     {
         "id": 1,
-        "name": "Celia",
-        "lastName": "Gallay",
-        "email": "celiagallay@gmail.com",
-        "password": "celia123",
-        "confirmPass": "celia123",
-        "category": "admin",
-        "userName": "Celia1",
-        "image": "default.jpg"
-    },
-    {
-        "id": 2,
-        "name": "Alejandro",
-        "lastName": "Seravalle",
-        "email": "aleseravalle@gmail.com",
-        "password": "alejandro123",
-        "confirmPass": "alejandro123",
-        "category": "admin",
-        "userName": "Ale1",
-        "image": "default.jpg"
-    },
-    {
-        "id": 3,
-        "name": "Joaquin",
-        "lastName": "Cassina",
-        "email": "joaquincassina@gmail.com",
-        "password": "joaquin123",
-        "confirmPass": "joaquin123",
-        "category": "admin",
-        "userName": "Joako1",
-        "image": "default.jpg"
-    },
-    {
-        "id": 4,
         "name": "Agustin",
         "lastName": "Beninca",
         "email": "agustinbeninca2@gmail.com",
-        "password": "agustin123",
-        "confirmPass": "agustin123",
         "category": "admin",
-        "userName": "Agus1",
-        "image": "default.jpg"
+        "userName": "agubeninca",
+        "password": "$2a$10$Bn0knQV7XkpxAdZvCR62iOTizhKMHi8F9tuz5S.PGe9CNSsx/L6Y.",
+        "confirmPass": "agu123",
+        "image": "1700933761195-product.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Joako",
+        "lastName": "Cassina",
+        "email": "joako@gmail.com",
+        "category": "admin",
+        "userName": "joako",
+        "password": "$2a$10$V0pFAVqv4W9ksWkDItc1ou3YyCIqz/EasWZAUFuisfJUKAntgCQ2a",
+        "confirmPass": "joako123",
+        "image": "1700938014521-product.jpg"
     }
 ]

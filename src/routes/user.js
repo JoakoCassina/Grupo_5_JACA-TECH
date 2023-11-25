@@ -3,6 +3,7 @@ const path = require ('path');
 
 const userControllers = require ('../controllers/userControllers');
 const { uploadValidator } = require('../middlewares/userMiddlewares');
+const { loginValidator } = require('../middlewares/userMiddlewares');
 const multer = require('multer');
 const routes = express.Router();
 
@@ -22,8 +23,11 @@ const upload = multer({ storage: storage });
 
 
 routes.get('/login', userControllers.login);
+routes.post('/login', loginValidator, userControllers.loginProcess);
 
 routes.get('/register', userControllers.register);
 routes.post('/register', upload.single('image'), uploadValidator, userControllers.uploadRegister);
+
+routes.get('/profile', userControllers.profile);
 
 module.exports = routes;

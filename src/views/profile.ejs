@@ -1,0 +1,8 @@
+<%- include('partials/head', { styles: ['index'] }) %>
+    <body class="background">
+        <%- include('partials/header') %>
+            <h2><%= userSession.name%> <%= userSession.lastName%></h2>
+            <img src="/img/avatars/<%= userSession.image%>" alt="">
+            <h4><%= userSession.email%></h4>
+        <%- include('partials/footer') %>
+    </body>
