@@ -71,3 +71,6 @@ Implementacion del registro de usuarios.
 
 25/11/2023
 Implementación de Login de usuarios.
+
+02/12/2023
+Implementar la funcion de recordar al usuario.
