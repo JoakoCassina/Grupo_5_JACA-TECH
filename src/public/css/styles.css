@@ -12,6 +12,61 @@ body.background {
 header {
     background-color: #2f2989;
 }
+header div ul {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+header div ul img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+header div ul h2 {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+
+}
+header div div.desplegable {
+    margin: 10px;
+    opacity: 0;
+    position: absolute;
+    transition: all 500ms ease;   
+}
+header div div.desplegable ul {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+}
+header div ul:hover ~ .desplegable {
+    opacity: 1;
+    display: flex;
+}
+header div div.desplegable:hover {
+    opacity: 1;
+}
+header div div.desplegable:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+header div div.desplegable ul li {
+    list-style: none;
+}
+
+header div div.desplegable ul li a {
+    text-decoration: none;
+    
+}
 
 header div.top-header {
     display: flex;
