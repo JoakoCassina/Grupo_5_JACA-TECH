@@ -24,9 +24,11 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }));
+
 app.use(cookies());
-app.use(userLoggedMiddleware);
 app.use(cookieMiddleware);
+app.use(userLoggedMiddleware);
+
 
 app.use('/', mainRoutes);
 
