@@ -4,7 +4,6 @@
             <a href="/"><img src="/img/logo 2.png" alt="logo"></a>
         </div>
         <div>
-            <%# CORREGIR Y AGREGAR ESTILOS A DATOS DEL USUARIO %>
             <ul class="login-cart">
                 <% if(locals.userToLogged){ %>
                     <img src="/img/avatars/<%= locals.userToLogged.image%>">
@@ -14,12 +13,22 @@
                 <% } %> 
                 <li class="cart"><a href="/product/productCart"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
+            <% if(locals.userToLogged){ %>
             <div class="desplegable">
                 <ul>
                     <li><a href="/user/profile">Perfil</a></li>
-                    <li><a href="">Cerrar Sesión</a></li>
+                    <li><a href="/user/logout">Cerrar Sesión</a></li>
                 </ul>
             </div>
+            <% } else{ %>
+                <div class="desplegableNone">
+                    <ul>
+                        <li><a href="/user/profile">Perfil</a></li>
+                        <li><a href="/user/logout">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            <% } %>
+
         </div>
         <div class="shearch" action="#" method="GET">
             <div class="shearch-bar">Buscar productos, marcas y más</div>

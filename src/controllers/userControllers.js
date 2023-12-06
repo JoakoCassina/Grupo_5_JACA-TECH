@@ -70,9 +70,12 @@ const controller = {
         return res.render('profile', {
             userSession: req.session.userToLogged
         });
+    },
+    logout(req, res) {
+        delete req.session.userToLogged;
+        res.clearCookie('loginEmail');
+        return res.redirect('/');
     }
 };
-
-
 
 module.exports = controller;

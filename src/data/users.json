@@ -20,5 +20,16 @@
         "password": "$2a$10$V0pFAVqv4W9ksWkDItc1ou3YyCIqz/EasWZAUFuisfJUKAntgCQ2a",
         "confirmPass": "joako123",
         "image": "1700938014521-product.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Alejandro",
+        "lastName": "Seravalle",
+        "email": "ale@gmail.com",
+        "category": "admin",
+        "userName": "Aleseravalle",
+        "password": "$2a$10$gcQRNa6TolHfIEAQ0cEiee.KIRCBWHTzbM01agoa/xsFXSTajlGt.",
+        "confirmPass": "ale123",
+        "image": "1701904033724-product.jpg"
     }
 ]

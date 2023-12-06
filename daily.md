@@ -64,7 +64,6 @@ Ajustes de estilos (productDetail).
 15/11/2023
 Creacion de users.json y retro del 4to sprint.
 
-
 # Sprint 5
 18/11/2023
 Implementacion del registro de usuarios.
@@ -74,3 +73,6 @@ Implementación de Login de usuarios.
 
 02/12/2023
 Implementar la funcion de recordar al usuario.
+
+06/12/2023
+Implementacion rutas de huéspedes y de usuarios.

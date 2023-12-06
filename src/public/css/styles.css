@@ -64,8 +64,11 @@ header div div.desplegable ul li {
 }
 
 header div div.desplegable ul li a {
-    text-decoration: none;
-    
+    text-decoration: none;  
+}
+
+.desplegableNone {
+    display: none;
 }
 
 header div.top-header {
