@@ -76,3 +76,6 @@ Implementar la funcion de recordar al usuario.
 
 06/12/2023
 Implementacion rutas de huéspedes y de usuarios.
+
+20/12/2023
+Creación y revisión del Diagrama Entidad-Relación.

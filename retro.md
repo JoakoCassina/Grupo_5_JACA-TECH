@@ -51,3 +51,20 @@
 
 **Dejar de hacer:** 
     procrastinar.
+
+# RETRO SPRINT 5
+
+**Comenzar a hacer:**
+    Profundizar CRUD de usuarios.
+
+**Hacer más:**
+    pair programming.
+
+**Continuar haciendo:**
+    trabajar en conjunto, coordinar, repasar conceptos, reever clases.
+
+**Hacer menos:**
+    hacer todas las tareas en un solo dia.
+
+**Dejar de hacer:** 
+    procrastinar.
