@@ -80,3 +80,6 @@ Implementacion rutas de huéspedes y de usuarios.
 # Sprint 6
 20/12/2023
 Creación y revisión del Diagrama Entidad-Relación.
+
+14/01/2024
+Instalación y configuración de Sequelize.
