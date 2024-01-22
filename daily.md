@@ -80,3 +80,8 @@ Implementacion rutas de huéspedes y de usuarios.
 # Sprint 6
 20/12/2023
 Creación y revisión del Diagrama Entidad-Relación.
+
+21/01/2024
+Creacion base de datos db_jaca.
+Creacion tabla users y roles (migration/models).
+
