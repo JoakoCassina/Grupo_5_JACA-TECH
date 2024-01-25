@@ -68,3 +68,20 @@
 
 **Dejar de hacer:** 
     procrastinar.
+
+# RETRO SPRINT 6
+
+**Comenzar a hacer:**
+    Finalizar migraciones de DateBase.
+
+**Hacer más:**
+    pair programming.
+
+**Continuar haciendo:**
+    Finalizar Sprint 6.
+
+**Hacer menos:**
+    hacer todas las tareas en un solo dia.
+
+**Dejar de hacer:** 
+    procrastinar.
