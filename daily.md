@@ -82,6 +82,8 @@ Implementacion rutas de huéspedes y de usuarios.
 Creación y revisión del Diagrama Entidad-Relación.
 
 21/01/2024
-Creacion base de datos db_jaca.
-Creacion tabla users y roles (migration/models).
+Creación base de datos db_jaca.
+Creación tabla users y roles (migration/models).
 
+24/01/2024
+Diagrama finalizado y cargado a Base de Datos.
