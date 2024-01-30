@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require ('path');
+const db = require('../database/models');
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 function getProducts(){
@@ -20,16 +21,18 @@ const controller = {
     create(req,res){
         res.render('productCreate');
     },
-    store: (req, res) => {
-		const products=getProducts();
-		const newProduct = {
-			id: products[products.length - 1].id + 1,
-			...req.body,
-			image: req.file?.filename || "default-image.png"
-		};
-		products.push(newProduct);
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 4));
-		res.redirect('/list');
+    async store(req, res) {
+		try {
+			const newProduct = {
+				...req.body,
+				image: req.file?.filename || "default-image.png"
+			};
+			await db.Product.create(newProduct);
+			res.redirect('/list');
+		} catch (error) {
+			return res.status(500).send(error)
+		}
+		
 	},
     edit: (req, res) => {
 		const products=getProducts();

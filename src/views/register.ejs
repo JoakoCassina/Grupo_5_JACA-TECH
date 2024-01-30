@@ -8,7 +8,7 @@
                         <div>
                             <h1>Datos Personales</h1>
                             <div class="input-box">
-                                <input type="text" placeholder="Nombre" name="name" value="<%= (locals.oldData && oldData.name) && oldData.name %>">
+                                <input type="text" placeholder="Nombre" name="first_name" value="<%= (locals.oldData && oldData.name) && oldData.name %>">
                                 <% if (locals.errors && errors.name) { %>
                                     <span class="error">
                                         <%= errors.name.msg %>
@@ -16,7 +16,7 @@
                                 <% } %>
                             </div>
                             <div class="input-box">
-                                <input type="text" placeholder="Apellido" name="lastName"
+                                <input type="text" placeholder="Apellido" name="last_name"
                                     value="<%= (locals.oldData && oldData.lastName) && oldData.lastName %>">
                                 <% if (locals.errors && errors.lastName) { %>
                                     <span class="error">
@@ -34,20 +34,6 @@
                                 <% } %>
                             </div>
                             <div class="input-box">
-                                <select name="category" id="cmbCategory" value="<%= (locals.oldData && oldData.category) && oldData.category %>">
-                                    <option value="">Selecciona categoria</option>
-                                    <option value="admin" <%=(locals.oldData && oldData.category==='admin' ) && 'selected' %>
-                                        >Administrador</option>
-                                    <option value="cliente" <%=(locals.oldData && oldData.category==='cliente' ) && 'selected' %>
-                                        >Cliente</option>    
-                                </select>
-                                <% if (locals.errors && errors.category) { %>
-                                    <span class="error">
-                                        <%= errors.category.msg %>
-                                    </span>
-                                    <% } %>
-                            </div>
-                            <div class="input-box">
                                 <input type="file" name="image">
                                 <% if (locals.errors && errors.image) { %>
                                     <span class="error">
@@ -59,16 +45,6 @@
                         <div>
                             <h1>Datos de Acceso</h1>
                             <div class="input-box">
-                                <input type="text" placeholder="Nombre de Usuario" name="userName"
-                                    value="<%= (locals.oldData && oldData.userName) && oldData.userName %>">
-                                <% if (locals.errors && errors.userName) { %>
-                                    <span class="error">
-                                        <%= errors.userName.msg %>
-                                    </span>
-                                    <% } %>
-                                        <i class="fas fa-oldData"></i>
-                            </div>
-                            <div class="input-box">
                                 <input type="password" placeholder="Contraseña" name="password"
                                     value="<%= (locals.oldData && oldData.password) && oldData.password %>">
                                 <i class="fas fa-lock"></i>
@@ -77,17 +53,6 @@
                                         <%= errors.password.msg %>
                                     </span>
                                 <% } %>
-                            </div>
-                            <div class="input-box">
-                                <input type="password" placeholder="Confirmar Contraseña" name="confirmPass"
-                                    value="<%= (locals.oldData && oldData.confirmPass) && oldData.confirmPass %>">
-                                <i class="fas fa-lock"></i>
-                                <% if (locals.errors && errors.confirmPass) { %>
-                                    <span class="error">
-                                        <%= errors.confirmPass.msg %>
-                                    </span>
-                                    <% } %>
-
                             </div>
                             <div class="consentimiento">
                                 <label><input type="checkbox" name="Concentimiento">He leido y acepto los</label>

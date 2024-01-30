@@ -17,6 +17,7 @@ module.exports = {
       first_name: 'Alejandro',
       last_name: 'Messi',
       email: 'ale@gmail.com',
+      image: 'default-image.png',
       password: bcript.hashSync('12345678', 10),
       roles_id: 1,
       createdAt: new Date(),
