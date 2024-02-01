@@ -32,21 +32,22 @@ const controller = {
                 roles_id: role.id
             };
             await db.User.create(newUser)
-            res.redirect('/')
+            res.redirect('/user/login')
         } catch (error) {
             return res.status(500).send(error)
         }
 
     },
-    loginProcess(req, res) {
-        const errors = validationResult(req);
+    async loginProcess(req, res) {
+        try {
+            const errors = validationResult(req);
         if (!errors.isEmpty()) {
             return res.render('login', { errors: errors.mapped(), oldData: req.body })
         };
-        const users = getUsers();
-        const userToLogin = users.find(user => user.email === req.body.email);
+        // const users = getUsers();
+        const userToLogin = await db.User.findOne({where: {email: req.body.email}});
         if (userToLogin) {
-            let passwordOk = bcryptjs.compareSync(req.body.password, userToLogin.password);
+            let passwordOk = bcryptjs.compare(req.body.password, userToLogin.password);
             if (passwordOk) {
                 delete userToLogin.password;
                 req.session.userToLogged = userToLogin;
@@ -70,6 +71,33 @@ const controller = {
                 }
             }
         });
+            
+        } catch (error) {
+            res.status(500).send(error)
+        }  
+    },
+    edit(req, res) {
+            db.User.findByPk(req.params.id)
+            .then((user) => {
+                res.render('editUser', {user})  
+            })
+            .catch ((error) => {
+                res.status(500).send(error)
+            });
+    },
+    async update(req, res) {
+        try {
+            const role = db.Role.findOne({where:{name:'cliente'}})
+            const newUser = {
+                ...req.body,
+                image: req.file?.filename || "default-image.png",
+                roles_id: role.id
+            };
+            await db.User.update(newUser, {where: {id: req.params.id}})
+            res.redirect('/user/profile')
+        } catch (error) {
+            res.status(500).send(error)
+        }
     },
     profile(req, res) {
         return res.render('profile', {

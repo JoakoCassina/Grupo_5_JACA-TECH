@@ -31,10 +31,11 @@ routes.post('/login', loginValidator, userControllers.loginProcess);
 routes.get('/register',guestMiddleware, userControllers.register);
 routes.post('/register', upload.single('image'), uploadValidator, userControllers.uploadRegister);
 
+routes.get('/edit/:id',notLoggedMiddleware,userControllers.edit);
+routes.put('/edit/:id', userControllers.update)
+
 routes.get('/profile',notLoggedMiddleware, userControllers.profile);
 
 routes.get('/logout', userControllers.logout);
-
-
 
 module.exports = routes;
