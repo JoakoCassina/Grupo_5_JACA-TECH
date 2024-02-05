@@ -10,7 +10,14 @@
                         <input type="text" placeholder="Nombre" required name="name">
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Marca" required name="brands_id">
+                        <select class="selectCategory" name="brand" id="">Marcas
+                            <option value="#">Selecciona una Marca</option>
+                            <% locals.brand?.forEach(element => { %>
+                                
+                                <option value="<%= element.id %>"><%= element.name %></option>
+                            <% }); %>
+                        </select>
+                       
                     </div>
                     <div class="input-box">
                         <input type="text" placeholder="Descripcion" required name="description">
@@ -21,15 +28,10 @@
                     <div class="input-box">
                         <select class="selectCategory" name="category" id="">Categoria
                             <option value="#">Selecciona una Categoria</option>
-                            <option value="TV">TV</option>
-                            <option value="Audio">Audio</option>
-                            <option value="Celulares y Tecnología">Celulares y Tecnología</option>
-                            <option value="Climatización">Climatización</option>
-                            <option value="Cocinas">Cocinas</option>
-                            <option value="Heladeras">Heladeras</option>
-                            <option value="Lavado">Lavado</option>
-                            <option value="Pequeños Cocina">Pequeños Cocina</option>
-                            <option value="Pequeños Hogar">Pequeños Hogar</option>
+                            <% locals.categories?.forEach(element => { %>
+                                
+                                <option value="<%= element.id %>"><%= element.name %></option>
+                            <% }); %>
                         </select>
                        
                     </div>

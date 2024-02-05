@@ -18,8 +18,14 @@ const controller = {
     cart(req, res) {
         res.render('productCart');
     },
-    create(req,res){
-        res.render('productCreate');
+    async create(req,res){
+		try {
+			const categories = await db.Product_categorie.findAll({include:['subcategories']})
+			const brand = await db.Brand.findAll();
+			res.render('productCreate', {categories, brand});
+		} catch (error) {
+			res.status(500).send(error)
+		}
     },
     async store(req, res) {
 		try {
