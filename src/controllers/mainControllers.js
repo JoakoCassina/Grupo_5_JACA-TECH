@@ -7,6 +7,8 @@ function getProducts(){
 	return products;
 }
 
+const db = require('../database/models');
+
 const controller = {
     index(req, res) {
         const products=getProducts();
@@ -14,8 +16,13 @@ const controller = {
         res.render('index', {offers});
     },
     list(req, res) {
-        const products=getProducts();
-        res.render('list', { products });
+        db.Product.findAll()
+            .then((products) => {
+                res.render('list', {products})
+            })
+            .catch ((error) => {
+                res.status(500).send(error)
+            });
     }
 };
 

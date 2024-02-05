@@ -24,7 +24,7 @@ routes.get('/productDetail/:id', productControllers.detail);
 routes.get('/productCart', productControllers.cart);
 
 routes.get('/create', productControllers.create);
-routes.post('/create',upload.single('img'), productControllers.store);
+routes.post('/create',upload.single('image'), productControllers.store);
 
 routes.get('/:id/edit', productControllers.edit);
 routes.put('/:id/edit', productControllers.update);

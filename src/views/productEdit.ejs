@@ -10,13 +10,28 @@
                         <input type="text" placeholder="Nombre" required name="name" value="<%= productEdit.name %>">
                     </div>
                     <div class="input-box">
+                        <select class="selectCategory" name="brand" id="">Marcas
+                            <option value="#">Selecciona una Marca</option>
+                            <% locals.brand && brand.forEach(element => { %>
+                                
+                                <option value="<%= element.id %>"><%= element.name %></option>
+                            <% }); %>
+                        </select>  
+                    </div>
+                    <div class="input-box">
                         <input type="text" placeholder="Descripcion" required name="description" value="<%= productEdit.description %>">
                     </div>
                     <div class="input-box">
                         <input type="file" name="img" value="<%= productEdit.image %>">
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Categoría" required name="category" value="<%= productEdit.category %>">
+                        <select class="selectCategory" name="category" id="">Categoria
+                            <option value="#">Selecciona una Categoria</option>
+                            <% locals.categories?.forEach(element => { %>
+                                
+                                <option value="<%= element.id %>"><%= element.name %></option>
+                            <% }); %>
+                        </select>
                     </div>
                     <div class="input-box">
                         <input type="text" placeholder="Sub-Categoría" required name="sub-category" value="<%= productEdit.subCategory %>">

@@ -1,19 +1,21 @@
-const fs = require('fs');
-const path = require ('path');
+// const fs = require('fs');
+// const path = require ('path');
 const db = require('../database/models');
 
-const productsFilePath = path.join(__dirname, '../data/products.json');
-function getProducts(){
-	const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-	return products;
-}
+// const productsFilePath = path.join(__dirname, '../data/products.json');
+// function getProducts(){
+// 	const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+// 	return products;
+// }
 
 
 const controller = {
     detail(req, res) {
-		const products=getProducts();
-        const product = products.find((product) => product.id == req.params.id);
-		res.render('productDetail', { product });
+		db.Product.findByPk(req.params.id) 
+		.then((product)=> {
+			res.render('productDetail', { product });
+		})
+
     },
     cart(req, res) {
         res.render('productCart');
@@ -41,9 +43,13 @@ const controller = {
 		
 	},
     edit: (req, res) => {
-		const products=getProducts();
-		const product = products.find((product) => product.id == req.params.id);
-		res.render('productEdit', { productEdit: product });
+		// const categories = db.Product_categorie.findAll({include:['subcategories']})
+		// const brand = db.Brand.findAll();
+		db.Product.findByPk(req.params.id,{include:'brand'}) 
+		.then((product)=> {
+			res.render('productEdit',  {productEdit: product});
+		})
+		
 	},
     update: (req, res) => {
 		const products=getProducts();
