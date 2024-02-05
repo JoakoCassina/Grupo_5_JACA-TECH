@@ -51,15 +51,21 @@ const controller = {
 		})
 		
 	},
-    update: (req, res) => {
-		const products=getProducts();
-		const indexProduct = products.findIndex((product) => product.id == parseInt(req.params.id));
-		products[indexProduct] = {
-			...products[indexProduct],
-			...req.body,
-		};
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 4));
-		res.redirect('/list');
+    async update (req, res) {
+		try {
+			const newProduct = {...req.body}
+		 	await db.Product.update(newProduct, {where:{id: req.params.id}})
+			res.redirect('/list')
+		} catch (error) {
+			return res.status(500).send(error)
+		}
+		// const indexProduct = products.findIndex((product) => product.id == parseInt(req.params.id));
+		// products[indexProduct] = {
+		// 	...products[indexProduct],
+		// 	...req.body,
+		// };
+		// fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 4));
+		// res.redirect('/list');
     },
 	destroy: (req, res) => {
 		const products=getProducts();
