@@ -87,3 +87,9 @@ Creación tabla users y roles (migration/models).
 
 24/01/2024
 Diagrama finalizado y cargado a Base de Datos.
+
+05/02/2024
+Configuracion de renderizado de formularios y bd.
+
+06/02/2024
+Metodo destroy de productController; render en index.

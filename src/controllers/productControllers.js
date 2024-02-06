@@ -44,14 +44,13 @@ const controller = {
 	},
 	edit: async (req, res) => {
 		try {
-
 			const categories = await db.Product_categorie.findAll({ include: ['subcategories'] })
 			const brands = await db.Brand.findAll();
 			const product = await db.Product.findByPk(req.params.id, { include: 'brand' })
 
 			res.render('productEdit', { productEdit: product, categories, brands });
 		} catch (error) {
-
+			return res.status(500).send(error)
 		}
 
 	},
@@ -72,13 +71,18 @@ const controller = {
 		// res.redirect('/list');
 	},
 	destroy: (req, res) => {
-		const products = getProducts();
-		const indexProduct = products.findIndex((product) => product.id == req.params.id);
-		products.splice(indexProduct, 1);
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
-		res.redirect('/list');
+		db.Product.destroy({ where : { id : req.params.id } })
+			.then(() => {
+				res.redirect('/list');
+			})
+			.catch ((error) => {
+                res.status(500).send(error)
+            });
+		// const products = getProducts();
+		// const indexProduct = products.findIndex((product) => product.id == req.params.id);
+		// products.splice(indexProduct, 1);
+		// fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
 	}
-
 };
 
 module.exports = controller;

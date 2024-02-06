@@ -45,6 +45,7 @@ const controller = {
             return res.render('login', { errors: errors.mapped(), oldData: req.body })
         };
         // const users = getUsers();
+        //revisar exclude 
         const userToLogin = await db.User.findOne({where: {email: req.body.email}, attributes:{exclude:['password']}});
         if (userToLogin) {
             let passwordOk = bcryptjs.compare(req.body.password, userToLogin.password);
@@ -106,7 +107,7 @@ const controller = {
                 userSession: user
             });
         } catch (error) {
-            
+            return res.status(500).send(error)
         }
     },
     logout(req, res) {
