@@ -6,7 +6,6 @@ const uploadValidator = [
     body('email').notEmpty().withMessage('El E-mail es requerido')
         .isEmail().withMessage('Ingresa un E-mail Válido'),
     body('password').notEmpty().withMessage('La contraseña es requerida'),
-    body('roles_id').notEmpty().withMessage('El campo es requerido'),
     body('image').custom((value, {req}) => {
         let file = req.file;
         if (!file) {

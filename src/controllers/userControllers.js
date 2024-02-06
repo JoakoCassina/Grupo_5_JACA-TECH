@@ -45,11 +45,10 @@ const controller = {
             return res.render('login', { errors: errors.mapped(), oldData: req.body })
         };
         // const users = getUsers();
-        const userToLogin = await db.User.findOne({where: {email: req.body.email}});
+        const userToLogin = await db.User.findOne({where: {email: req.body.email}, attributes:{exclude:['password']}});
         if (userToLogin) {
             let passwordOk = bcryptjs.compare(req.body.password, userToLogin.password);
             if (passwordOk) {
-                delete userToLogin.password;
                 req.session.userToLogged = userToLogin;
                 if (req.body.remember) {
                     res.cookie('loginEmail', req.body.email, { maxAge: 60000 * 2 });
@@ -99,10 +98,16 @@ const controller = {
             res.status(500).send(error)
         }
     },
-    profile(req, res) {
-        return res.render('profile', {
-            userSession: req.session.userToLogged
-        });
+    async profile(req, res) {
+        try {
+            const user = await db.User.findByPk(req.session.userToLogged?.id, {attributes:{exclude:['password']}});
+            req.session.userToLogged = user;
+            return res.render('profile', {
+                userSession: user
+            });
+        } catch (error) {
+            
+        }
     },
     logout(req, res) {
         delete req.session.userToLogged;

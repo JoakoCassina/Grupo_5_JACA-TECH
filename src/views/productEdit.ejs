@@ -10,11 +10,11 @@
                         <input type="text" placeholder="Nombre" required name="name" value="<%= productEdit.name %>">
                     </div>
                     <div class="input-box">
-                        <select class="selectCategory" name="brand" id="">Marcas
+                        <select class="selectCategory" name="brands_id" id="">Marcas
                             <option value="#">Selecciona una Marca</option>
-                            <% locals.brand && brand.forEach(element => { %>
+                            <% locals.brands && brands.forEach(element => { %>
                                 
-                                <option value="<%= element.id %>"><%= element.name %></option>
+                                <option <%= productEdit.brands_id == element.id ? 'selected' : '' %> value="<%= element.id %>"><%= element.name %></option>
                             <% }); %>
                         </select>  
                     </div>
@@ -25,11 +25,11 @@
                         <input type="file" name="img" value="<%= productEdit.image %>">
                     </div>
                     <div class="input-box">
-                        <select class="selectCategory" name="category" id="">Categoria
+                        <select class="selectCategory" name="product_categories_id" id="">Categoria
                             <option value="#">Selecciona una Categoria</option>
                             <% locals.categories?.forEach(element => { %>
                                 
-                                <option value="<%= element.id %>"><%= element.name %></option>
+                                <option <%= productEdit.product_categories_id == element.id ? 'selected' : '' %> value="<%= element.id %>"><%= element.name %></option>
                             <% }); %>
                         </select>
                     </div>

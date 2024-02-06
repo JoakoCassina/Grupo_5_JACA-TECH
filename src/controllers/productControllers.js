@@ -10,26 +10,26 @@ const db = require('../database/models');
 
 
 const controller = {
-    detail(req, res) {
-		db.Product.findByPk(req.params.id) 
-		.then((product)=> {
-			res.render('productDetail', { product });
-		})
+	detail(req, res) {
+		db.Product.findByPk(req.params.id)
+			.then((product) => {
+				res.render('productDetail', { product });
+			})
 
-    },
-    cart(req, res) {
-        res.render('productCart');
-    },
-    async create(req,res){
+	},
+	cart(req, res) {
+		res.render('productCart');
+	},
+	async create(req, res) {
 		try {
-			const categories = await db.Product_categorie.findAll({include:['subcategories']})
+			const categories = await db.Product_categorie.findAll({ include: ['subcategories'] })
 			const brand = await db.Brand.findAll();
-			res.render('productCreate', {categories, brand});
+			res.render('productCreate', { categories, brand });
 		} catch (error) {
 			res.status(500).send(error)
 		}
-    },
-    async store(req, res) {
+	},
+	async store(req, res) {
 		try {
 			const newProduct = {
 				...req.body,
@@ -40,21 +40,25 @@ const controller = {
 		} catch (error) {
 			return res.status(500).send(error)
 		}
-		
+
 	},
-    edit: (req, res) => {
-		// const categories = db.Product_categorie.findAll({include:['subcategories']})
-		// const brand = db.Brand.findAll();
-		db.Product.findByPk(req.params.id,{include:'brand'}) 
-		.then((product)=> {
-			res.render('productEdit',  {productEdit: product});
-		})
-		
-	},
-    async update (req, res) {
+	edit: async (req, res) => {
 		try {
-			const newProduct = {...req.body}
-		 	await db.Product.update(newProduct, {where:{id: req.params.id}})
+
+			const categories = await db.Product_categorie.findAll({ include: ['subcategories'] })
+			const brands = await db.Brand.findAll();
+			const product = await db.Product.findByPk(req.params.id, { include: 'brand' })
+
+			res.render('productEdit', { productEdit: product, categories, brands });
+		} catch (error) {
+
+		}
+
+	},
+	async update(req, res) {
+		try {
+			const newProduct = { ...req.body }
+			await db.Product.update(newProduct, { where: { id: req.params.id } })
 			res.redirect('/list')
 		} catch (error) {
 			return res.status(500).send(error)
@@ -66,9 +70,9 @@ const controller = {
 		// };
 		// fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 4));
 		// res.redirect('/list');
-    },
+	},
 	destroy: (req, res) => {
-		const products=getProducts();
+		const products = getProducts();
 		const indexProduct = products.findIndex((product) => product.id == req.params.id);
 		products.splice(indexProduct, 1);
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
