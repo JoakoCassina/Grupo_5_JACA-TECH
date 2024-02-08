@@ -46,11 +46,12 @@ const controller = {
         };
         // const users = getUsers();
         //revisar exclude 
-        const userToLogin = await db.User.findOne({where: {email: req.body.email}, attributes:{exclude:['password']}});
+        const userToLogin = await db.User.findOne({where: {email: req.body.email}});
         if (userToLogin) {
-            let passwordOk = bcryptjs.compare(req.body.password, userToLogin.password);
+            let passwordOk = bcryptjs.compareSync(req.body.password, userToLogin.password);
             if (passwordOk) {
                 req.session.userToLogged = userToLogin;
+                delete req.session.userToLogged.password
                 if (req.body.remember) {
                     res.cookie('loginEmail', req.body.email, { maxAge: 60000 * 2 });
                 }
@@ -73,6 +74,7 @@ const controller = {
         });
             
         } catch (error) {
+            console.log(error)
             res.status(500).send(error)
         }  
     },
