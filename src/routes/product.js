@@ -33,4 +33,6 @@ routes.delete('/:id/delete', productControllers.destroy);
 
 
 
+
+
 module.exports = routes;

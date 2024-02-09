@@ -31,5 +31,16 @@
         "password": "$2a$10$gcQRNa6TolHfIEAQ0cEiee.KIRCBWHTzbM01agoa/xsFXSTajlGt.",
         "confirmPass": "ale123",
         "image": "1701904033724-product.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Joaquin",
+        "lastName": "Cassina",
+        "email": "Joaquincassina35@gmail.com",
+        "category": "cliente",
+        "userName": "koku",
+        "password": "$2a$10$dy5zz70xdYrLg.VMDHD5teJ6bob8jEy/qtYtmTP754hQrsv/3cnPu",
+        "confirmPass": "asdasd",
+        "image": "1707260779725-product.jpg"
     }
 ]

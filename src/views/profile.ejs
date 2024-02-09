@@ -1,10 +1,34 @@
-<%- include('partials/head', { styles: ['index'] }) %>
+<%- include('partials/head', { styles: ['index', 'profile'] }) %>
     <body class="background">
         <%- include('partials/header') %>
+        <main>
+        <div class="fondoProfile">
+            <div><img src="/img/avatars/<%= userSession.image%>" alt="" width="50px" height="50px"></div>
+        </div>
+        
+        <div class="nombreProfile">
             <h2><%= userSession.first_name%> <%= userSession.last_name%></h2>
-            <img src="/img/avatars/<%= userSession.image%>" alt="">
-            <h4><%= userSession.email%></h4>
-            <a href="/user/edit/<%= userSession.id %>"><button>Editar</button></a>
+        </div>
+        <div class="nombreProfile">
+            <h2><%= userSession.email%></h2>
+        </div>
+        <div class="nombreProfile">
+            <h2>Desarrollador Web Full Stack JR</h2>
+        </div>
+        <div class="nombreProfile">
+            <h2>Conocimientos</h2>
+            <ul>
+                <li><i class="fa-brands fa-html5"></i>HTML</li>
+                <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
+                <li><i class="fa-brands fa-js"></i>JavaScript</li>
+                <li><i class="fa-brands fa-node"></i>Node.JS</li>
+                <li><i class="fa-brands fa-react"></i>React</li>
+            </ul>
+        </div>
+        <div class="buttonProfile">
+            <a href="/user/edit/<%= userSession.id %>"><button class="buttonPrincipal">Editar</button></a>
+        </div>
+    </main>
             
         <%- include('partials/footer') %>
     </body>

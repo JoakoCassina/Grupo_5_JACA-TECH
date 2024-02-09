@@ -1,4 +1,4 @@
-<%- include('partials/head', { styles: ['forms'] }) %>
+<%- include('partials/head', { styles: ['forms', 'profile'] }) %>
 
     <body class="background">
         <%- include('partials/header') %>
@@ -35,7 +35,7 @@
                             </div>
                             <div class="input-box">
                                 <input type="file" name="image">
-                                <img src="/img/avatars/<%= user.image %>" alt="">
+                                <!-- <img src="/img/avatars/<%= user.image %>" alt=""> -->
                                 <% if (locals.errors && errors.image) { %>
                                     <span class="error">
                                         <%= errors.image.msg %>
@@ -48,5 +48,6 @@
                 </div>
             </main>
             <%- include('partials/footer') %>
+
     </body>
     </html>
