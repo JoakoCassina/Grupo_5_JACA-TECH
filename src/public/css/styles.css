@@ -108,7 +108,7 @@ div.menu {
     font-size: 22px;
 }
 
-div.top-header div.shearch {
+div.top-header form div.shearch {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -119,11 +119,11 @@ div.top-header div.shearch {
     padding: 5px;
 }
 
-div.top-header div.shearch div.shearch-bar {
+div.top-header form div.shearch div.shearch-bar {
     color: gray;
 }
 
-div.top-header div.shearch div.shearch-i {
+div.top-header form div.shearch div.shearch-i {
     background-color: #74C0CD;
     width: 5%;
     font-size: medium;

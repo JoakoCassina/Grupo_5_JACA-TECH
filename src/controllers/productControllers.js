@@ -1,5 +1,6 @@
 // const fs = require('fs');
 // const path = require ('path');
+const { Op } = require('sequelize');
 const db = require('../database/models');
 
 // const productsFilePath = path.join(__dirname, '../data/products.json');
@@ -19,6 +20,16 @@ const controller = {
 	},
 	cart(req, res) {
 		res.render('productCart');
+	},
+	search (req, res) {
+		results = req.query.search;
+		db.Product.findAll({where: {name: {[Op.like] : `%${results}%`}}})
+			.then((products) => {
+				res.render('ListResults', {products})
+			})
+			.catch ((error) => {
+				res.status(500).send(error)
+			})
 	},
 	async create(req, res) {
 		try {

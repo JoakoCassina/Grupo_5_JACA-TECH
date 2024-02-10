@@ -34,7 +34,7 @@
                                 <% } %>
                             </div>
                             <div class="input-box">
-                                <input type="file" name="image">
+                                <input type="file" name="image" value="<%= user.image %>">
                                 <!-- <img src="/img/avatars/<%= user.image %>" alt=""> -->
                                 <% if (locals.errors && errors.image) { %>
                                     <span class="error">
