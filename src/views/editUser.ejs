@@ -4,7 +4,7 @@
         <%- include('partials/header') %>
             <main class="main_form">
                 <div class="forms">
-                    <form action="/user/edit/<%= user.id %>/?_method=PUT" method="post">
+                    <form action="/user/edit/<%= user.id %>/?_method=PUT" method="post" enctype="multipart/form-data">
                         <div>
                             <h1>Datos Personales</h1>
                             <div class="input-box">

@@ -92,7 +92,7 @@ const controller = {
             const role = db.Role.findOne({where:{name:'cliente'}})
             const newUser = {
                 ...req.body,
-                image: req.file?.filename || "default-image.png",
+                image: req.file?.filename,
                 roles_id: role.id
             };
             await db.User.update(newUser, {where: {id: req.params.id}})

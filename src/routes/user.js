@@ -17,7 +17,7 @@ const storage = multer.diskStorage({
     },
     filename: function (req, file, cb) {
         const ext = path.extname(file.originalname);
-        const filename = `${Date.now()}-product${ext}`;
+        const filename = `${Date.now()}-user${ext}`;
         cb(null, filename);
     }
 });
@@ -32,7 +32,7 @@ routes.get('/register',guestMiddleware, userControllers.register);
 routes.post('/register', upload.single('image'), uploadValidator, userControllers.uploadRegister);
 
 routes.get('/edit/:id',notLoggedMiddleware,userControllers.edit);
-routes.put('/edit/:id', userControllers.update)
+routes.put('/edit/:id', upload.single('image'),userControllers.update)
 
 routes.get('/profile',notLoggedMiddleware, userControllers.profile);
 

@@ -67,7 +67,10 @@ const controller = {
 	},
 	async update(req, res) {
 		try {
-			const newProduct = { ...req.body }
+			const newProduct = { 
+				...req.body,
+				image: req.file?.filename,
+			}
 			await db.Product.update(newProduct, { where: { id: req.params.id } })
 			res.redirect('/list')
 		} catch (error) {
