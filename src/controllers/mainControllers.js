@@ -1,21 +1,33 @@
-const fs = require('fs');
-const path = require ('path');
+// const fs = require('fs');
+// const path = require ('path');
 
-const productsFilePath = path.join(__dirname, '../data/products.json');
-function getProducts(){
-	const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-	return products;
-}
+// const productsFilePath = path.join(__dirname, '../data/products.json');
+// function getProducts(){
+// 	const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+// 	return products;
+// }
+
+const { where, Op } = require('sequelize');
+const db = require('../database/models');
 
 const controller = {
     index(req, res) {
-        const products=getProducts();
-        const offers = products.filter((product) => product.discount > 0);
-        res.render('index', {offers});
+        db.Product.findAll({where:{ discount : {[Op.gt] : 0 }}})
+            .then((offers) => {
+                res.render('index', {offers})
+            })
+            .catch ((error) => {
+                res.status(500).send(error)
+            });
     },
     list(req, res) {
-        const products=getProducts();
-        res.render('list', { products });
+        db.Product.findAll()
+            .then((products) => {
+                res.render('list', {products})
+            })
+            .catch ((error) => {
+                res.status(500).send(error)
+            });
     }
 };
 

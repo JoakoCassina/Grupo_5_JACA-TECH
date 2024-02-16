@@ -1,14 +1,14 @@
-<%- include('partials/head', { styles: ['forms'] }) %>
+<%- include('partials/head', { styles: ['forms', 'profile'] }) %>
 
     <body class="background">
         <%- include('partials/header') %>
             <main class="main_form">
                 <div class="forms">
-                    <form action="/user/register" method="post" enctype="multipart/form-data">
+                    <form action="/user/edit/<%= user.id %>/?_method=PUT" method="post" enctype="multipart/form-data">
                         <div>
                             <h1>Datos Personales</h1>
                             <div class="input-box">
-                                <input type="text" placeholder="Nombre" name="first_name" value="<%= (locals.oldData && oldData.first_name) && oldData.first_name %>">
+                                <input type="text" placeholder="Nombre" name="first_name" value="<%= user.first_name %>">
                                 <% if (locals.errors && errors.first_name) { %>
                                     <span class="error">
                                         <%= errors.first_name.msg %>
@@ -17,7 +17,7 @@
                             </div>
                             <div class="input-box">
                                 <input type="text" placeholder="Apellido" name="last_name"
-                                    value="<%= (locals.oldData && oldData.last_name) && oldData.last_name %>">
+                                    value="<%= user.last_name %>">
                                 <% if (locals.errors && errors.last_name) { %>
                                     <span class="error">
                                         <%= errors.last_name.msg %>
@@ -26,7 +26,7 @@
                             </div>
                             <div class="input-box">
                                 <input type="email" placeholder="Email" name="email"
-                                    value="<%= (locals.oldData && oldData.email) && oldData.email %>">
+                                    value="<%= user.email %>">
                                 <% if (locals.errors && errors.email) { %>
                                     <span class="error">
                                         <%= errors.email.msg %>
@@ -34,7 +34,8 @@
                                 <% } %>
                             </div>
                             <div class="input-box">
-                                <input type="file" name="image">
+                                <input type="file" name="image" value="<%= user.image %>">
+                                <!-- <img src="/img/avatars/<%= user.image %>" alt=""> -->
                                 <% if (locals.errors && errors.image) { %>
                                     <span class="error">
                                         <%= errors.image.msg %>
@@ -42,29 +43,11 @@
                                     <% } %>
                             </div>
                         </div>
-                        <div>
-                            <h1>Datos de Acceso</h1>
-                            <div class="input-box">
-                                <input type="password" placeholder="Contraseña" name="password"
-                                    value="<%= (locals.oldData && oldData.password) && oldData.password %>">
-                                <i class="fas fa-lock"></i>
-                                <% if (locals.errors && errors.password) { %>
-                                    <span class="error">
-                                        <%= errors.password.msg %>
-                                    </span>
-                                <% } %>
-                            </div>
-                            <div class="consentimiento">
-                                <label><input type="checkbox" name="Concentimiento">He leido y acepto los</label>
-                                <a href="#">terminos y condiciones de Usuario</a>
-                            </div>
-                            <button type="submit">Crear cuenta</button>
-                            <button type="reset">Limpiar Formulario</button>
-                        </div>
+                        <button type="submit">Confirmar cambios</button>
                     </form>
                 </div>
             </main>
             <%- include('partials/footer') %>
-    </body>
 
+    </body>
     </html>

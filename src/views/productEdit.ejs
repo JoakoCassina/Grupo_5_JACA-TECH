@@ -3,20 +3,35 @@
     <%- include('partials/header') %>
     <main class="main_form">
         <div class="forms">
-            <form action="/product/<%= productEdit.id %>/edit?_method=PUT" method="post">
+            <form action="/product/<%= productEdit.id %>/edit?_method=PUT" method="post" enctype="multipart/form-data">
                 <div>
                     <h1>Edición de Producto</h1>
                     <div class="input-box">
                         <input type="text" placeholder="Nombre" required name="name" value="<%= productEdit.name %>">
                     </div>
                     <div class="input-box">
+                        <select class="selectCategory" name="brands_id" id="">Marcas
+                            <option value="#">Selecciona una Marca</option>
+                            <% locals.brands && brands.forEach(element => { %>
+                                
+                                <option <%= productEdit.brands_id == element.id ? 'selected' : '' %> value="<%= element.id %>"><%= element.name %></option>
+                            <% }); %>
+                        </select>  
+                    </div>
+                    <div class="input-box">
                         <input type="text" placeholder="Descripcion" required name="description" value="<%= productEdit.description %>">
                     </div>
                     <div class="input-box">
-                        <input type="file" name="img" value="<%= productEdit.image %>">
+                        <input type="file" name="image" value="<%= productEdit.image %>">
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Categoría" required name="category" value="<%= productEdit.category %>">
+                        <select class="selectCategory" name="product_categories_id" id="">Categoria
+                            <option value="#">Selecciona una Categoria</option>
+                            <% locals.categories?.forEach(element => { %>
+                                
+                                <option <%= productEdit.product_categories_id == element.id ? 'selected' : '' %> value="<%= element.id %>"><%= element.name %></option>
+                            <% }); %>
+                        </select>
                     </div>
                     <div class="input-box">
                         <input type="text" placeholder="Sub-Categoría" required name="sub-category" value="<%= productEdit.subCategory %>">

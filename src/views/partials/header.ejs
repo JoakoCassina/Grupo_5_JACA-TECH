@@ -30,10 +30,12 @@
             <% } %>
 
         </div>
-        <div class="shearch" action="#" method="GET">
-            <div class="shearch-bar">Buscar productos, marcas y más</div>
-            <div class="shearch-i"><i class="fa fa-search"></i></div>
-        </div>
+        <form action="/product/search" method="GET">
+            <div class="shearch">
+                <input type="text" class="shearch-bar" name="search" placeholder="Buscar productos, marcas y más">
+                <button type="submit" class="shearch-i"><i class="fa fa-search"></i></button>
+            </div>
+        </form>
     </div>
     <nav>
         <div class="menu">

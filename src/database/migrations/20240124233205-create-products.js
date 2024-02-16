@@ -21,7 +21,7 @@ module.exports = {
         allowNull: false
       },
       discount: {
-        type: Sequelize.DECIMAL(10,3),
+        type: Sequelize.INTEGER,
         allowNull: false
       },
       image: {
