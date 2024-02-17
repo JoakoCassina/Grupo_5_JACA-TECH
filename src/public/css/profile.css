@@ -1,21 +1,35 @@
+.nombreProfile ul {
+    list-style: none;
+    display: block;
+    text-align: center;    
+}
+
+form h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px;
+}
+div.fondoProfile #vistaProfile {
+    height: 60vh;
+}
 .fondoProfile {
     background-image: url(../img/avatars/fondoProfile.jpg);
     width: 100%;
-    height: 60vh;
+    height: 100%;
+    padding: 30px;
 }
 
 .fondoProfile div {
     display: flex;
     justify-content: center;
-    
-    
 }
 
 .fondoProfile img {
     border: 5px solid white;
     border-radius: 50%;
     width: 145px;
-    height: 150px;
+    height: 100%;
     margin-top: 70px;
 }
 
@@ -29,13 +43,9 @@
     text-align: center;
     text-transform: uppercase;
     padding: 5px;
+    font-size: medium;
 }
-.nombreProfile ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+
 .nombreProfile ul li {
     margin-left: 30px;
     margin-right: 30px;
@@ -60,7 +70,7 @@
 div.buttonProfile {
     text-align: center;
 }
-div.buttonProfile a button {
+div.buttonProfile a button, button#cambios {
     width: 50%;
     height: 45px;
     background: white;
@@ -74,16 +84,20 @@ div.buttonProfile a button {
     transition: 800ms;
     margin: 10px 0;
 }
-div.buttonProfile a button:hover {
+div.buttonProfile a button, button#cambios:hover {
     background-color: #2f2989;
     color: white;
 
+}
+button#cambios {
+    text-align: center;
 }
 
 .sinInput {
     background-color: transparent;
     border: none;
-    width: 95%;
+    width: 90%;
+    margin-left: 10px;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -93,16 +107,36 @@ div.buttonProfile a button:hover {
 div.updateImg {
     flex-direction: column;
     align-items: center;
+    margin-right: 5%;
 }
 
 div.updateImg label {
     background-color: white;
     padding: 5px;
     border-radius: 15px;
-    margin-top: 5px;
+    margin: 15px;
     color: rgb(184, 184, 22);
     font-weight: bold;
+    cursor: pointer;
 }
 div.updateImg input {
-    outline: none;
+    display: none;
+}
+
+@media (min-width: 481px) {
+    .nombreProfile ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+    }
+    .nombreProfile h2 {
+        font-size: xx-large;
+    }
+    .sinInput {
+        width: 95%;
+        margin-left: 0;
+        
+    }
 }

@@ -2,8 +2,8 @@
 
     <body class="background">
         <%- include('partials/header') %>
-            <main >
-                <div >
+            <main>
+                <div>
                     <form action="/user/edit/<%= user.id %>/?_method=PUT" method="post">
                         <h1>Editar Usuario</h1>
                         <div class="fondoProfile">
@@ -46,45 +46,9 @@
                                 </span>
                             <% } %>
                         </div>
-                        <!-- <div>
-                            <h1>Datos Personales</h1>
-                            <div class="input-box">
-                                <input type="text" placeholder="Nombre" name="first_name" value="<%= user.first_name %>">
-                                <% if (locals.errors && errors.first_name) { %>
-                                    <span class="error">
-                                        <%= errors.first_name.msg %>
-                                    </span>
-                                <% } %>
-                            </div>
-                            <div class="input-box">
-                                <input type="text" placeholder="Apellido" name="last_name"
-                                    value="<%= user.last_name %>">
-                                <% if (locals.errors && errors.last_name) { %>
-                                    <span class="error">
-                                        <%= errors.last_name.msg %>
-                                    </span>
-                                <% } %>
-                            </div>
-                            <div class="input-box">
-                                <input type="email" placeholder="Email" name="email"
-                                    value="<%= user.email %>">
-                                <% if (locals.errors && errors.email) { %>
-                                    <span class="error">
-                                        <%= errors.email.msg %>
-                                    </span>
-                                <% } %>
-                            </div>
-                            <div class="input-box">
-                                <input type="file" name="image">
-                                <img src="/img/avatars/<%= user.image %>" alt="">
-                                <% if (locals.errors && errors.image) { %>
-                                    <span class="error">
-                                        <%= errors.image.msg %>
-                                    </span>
-                                    <% } %>
-                            </div>
-                        </div> -->
-                        <button type="submit">Confirmar cambios</button>
+                        <div class="buttonProfile">
+                            <button id="cambios" type="submit">Confirmar cambios</button>
+                        </div>
                     </form>
                 </div>
             </main>
