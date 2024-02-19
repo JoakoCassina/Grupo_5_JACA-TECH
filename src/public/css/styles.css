@@ -108,7 +108,7 @@ div.menu {
     font-size: 22px;
 }
 
-div.top-header form div.shearch {
+div.top-header form {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,19 +118,37 @@ div.top-header form div.shearch {
     width: 100%;
     padding: 5px;
 }
+div.top-header form div.shearch {
+    display: flex;
+    width: 100%;
 
+}
 div.top-header form div.shearch div.shearch-bar {
+    width: 90%;
+}
+div.top-header form div.shearch div.shearch-bar input{
+    outline: none;
+}
+div.top-header form div.shearch div.shearch-bar input,
+div.top-header form div.shearch div.shearch-i button
+ {
+    width: 100%;
     color: gray;
+    background-color: transparent;
+    border: none;
+}
+div.top-header form div.shearch div.shearch-i {
+    width: 10%;
 }
 
-div.top-header form div.shearch div.shearch-i {
+div.top-header form div.shearch div.shearch-i button {
     background-color: #74C0CD;
-    width: 5%;
     font-size: medium;
     text-align: center;
     margin: 1px;
     border-radius: 5px;
     color: white;
+    justify-content: flex-end;
 }
 
 header nav {
@@ -252,16 +270,15 @@ div.site-footer div.copy {
         display: none;
     }
 
-    div.top-header div.shearch {
+    div.top-header form {
         width: 50%;
         order: -1;
         border-radius: 5px;
         margin-left: 30px;
     }
-
-    div.top-header div.shearch div.shearch-i {
-        background-color: white;
-        color: #2f2989;
+    div.top-header form div.shearch div.shearch-i {
+        width: 6%;
+        margin-left: 4%;
     }
 
     div.logo-principal {

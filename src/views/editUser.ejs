@@ -2,40 +2,16 @@
 
     <body class="background">
         <%- include('partials/header') %>
-            <main class="main_form">
-                <div class="forms">
+            <main>
+                <div>
                     <form action="/user/edit/<%= user.id %>/?_method=PUT" method="post" enctype="multipart/form-data">
-                        <div>
-                            <h1>Datos Personales</h1>
-                            <div class="input-box">
-                                <input type="text" placeholder="Nombre" name="first_name" value="<%= user.first_name %>">
-                                <% if (locals.errors && errors.first_name) { %>
-                                    <span class="error">
-                                        <%= errors.first_name.msg %>
-                                    </span>
-                                <% } %>
+                        <h1>Editar Usuario</h1>
+                        <div class="fondoProfile">
+                            <div class="updateImg">
+                                <img id="img" src="/img/avatars/<%= user.image %>">
+                                <input type="file" name="image" id="foto">
+                                <label for="foto">Cambiar Foto</label>
                             </div>
-                            <div class="input-box">
-                                <input type="text" placeholder="Apellido" name="last_name"
-                                    value="<%= user.last_name %>">
-                                <% if (locals.errors && errors.last_name) { %>
-                                    <span class="error">
-                                        <%= errors.last_name.msg %>
-                                    </span>
-                                <% } %>
-                            </div>
-                            <div class="input-box">
-                                <input type="email" placeholder="Email" name="email"
-                                    value="<%= user.email %>">
-                                <% if (locals.errors && errors.email) { %>
-                                    <span class="error">
-                                        <%= errors.email.msg %>
-                                    </span>
-                                <% } %>
-                            </div>
-                            <div class="input-box">
-                                <input type="file" name="image" value="<%= user.image %>">
-                                <!-- <img src="/img/avatars/<%= user.image %>" alt=""> -->
                                 <% if (locals.errors && errors.image) { %>
                                     <span class="error">
                                         <%= errors.image.msg %>
@@ -43,11 +19,39 @@
                                     <% } %>
                             </div>
                         </div>
-                        <button type="submit">Confirmar cambios</button>
+                        <div class="nombreProfile" id="lineal">
+                            <input class="sinInput" type="text" placeholder="Nombre" name="first_name" value="<%= user.first_name %>">
+                            <i class="fa-solid fa-pen"></i> 
+                            <% if (locals.errors && errors.first_name) { %>
+                                    <span class="error">
+                                        <%= errors.first_name.msg %>
+                                    </span>
+                                <% } %>
+                        </div>
+                        <div class="nombreProfile">
+                            <input class="sinInput" type="text" placeholder="Apellido" name="last_name" value="<%= user.last_name %>">
+                            <i class="fa-solid fa-pen"></i> 
+                            <% if (locals.errors && errors.last_name) { %>
+                                <span class="error">
+                                    <%= errors.last_name.msg %>
+                                </span>
+                            <% } %>
+                        </div>
+                        <div class="nombreProfile">
+                            <input class="sinInput" type="email" placeholder="Email" name="email" value="<%= user.email %>">
+                            <i class="fa-solid fa-pen"></i> 
+                            <% if (locals.errors && errors.email) { %>
+                                <span class="error">
+                                    <%= errors.email.msg %>
+                                </span>
+                            <% } %>
+                        </div>
+                        <div class="buttonProfile">
+                            <button id="cambios" type="submit">Confirmar cambios</button>
+                        </div>
                     </form>
                 </div>
             </main>
+            <script src="/js/previewImg.js"></script>
             <%- include('partials/footer') %>
-
     </body>
-    </html>

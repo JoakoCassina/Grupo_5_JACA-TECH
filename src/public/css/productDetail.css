@@ -6,7 +6,6 @@ section.pDetail{
     flex-direction: column;
     align-items: center;
     width: auto; 
-    margin-bottom: 150px;
     border-radius: 40px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 5);
 }
@@ -70,37 +69,40 @@ section.pDetail{
     padding: 10px;
 }
 
-.pdDescription div.buttons {
-    margin: auto;
-    text-align: center;
+div.buttons div.buttonEdit{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 40px;
+    padding: 20px;
+    
 }
-.pdDescription div.buttons button {
+
+div.buttons button,
+div.buttonEdit a{
     font-size: 1.2rem;
     margin: 5px;
-
     width: 100%;
     border: none;
     color: #2f2989;
     cursor:pointer;
     transition: 300ms;
 }
-.pdDescription div.buttons button:hover{
+div.buttons button:hover{
     background-color: #2f2989;
     color: white;
 }
-main section form button {
- padding: 10px;
+div.buttons form button {
+ color: red;
 }
-main section div.buttonEdit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-    padding: 20px;
-    
+div.buttons form button:hover {
+    background-color: red;
+    color: white;
 }
-main section div.buttonEdit button,
-.pdDescription div.buttons button {
+
+main div.buttonEdit button,
+main div.buttonEdit a  {
     background-color: white;
     border-radius: 40px;
     padding: 5px;
@@ -108,11 +110,13 @@ main section div.buttonEdit button,
     font-weight: 600;
 }
 
-main section div.buttonEdit button a {
-    text-decoration: none;
+main div.buttonEdit a {
     color: #2f2989;
+    height: 34px;
+    text-align: center;
+    
 }
-.pdDescription div.buttonEdit button a:hover{
+div.buttonEdit a:hover{
     background-color: #2f2989;
     color: white;
 }
@@ -140,9 +144,6 @@ main section div.buttonEdit button a {
     .pdDescription div.submit,
     .pdDescription div.price{
         font-size: 1.5rem;
-    }
-    .pdDescription button{
-        padding: 10px;
     }
     section.pDetail {
         flex-direction: row;
