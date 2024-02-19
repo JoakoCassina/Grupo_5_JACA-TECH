@@ -31,6 +31,16 @@ const controller = {
                 image: req.file?.filename || "default-image.png",
                 roles_id: role.id
             };
+            const existingUser = await db.User.findOne({where: {email: req.body.email}}); 
+                if (existingUser) {
+                    return res.render("register", {
+                        errors: {
+                            email: {
+                                msg: "El correo electronico ya esta registrado"
+                            }
+                        }
+                    });
+                }
             await db.User.create(newUser)
             res.redirect('/user/login')
         } catch (error) {
