@@ -38,6 +38,7 @@ form div.input-box input {
     font-size: 16px;
     color: white;
     padding: 20px 45px 20px 20px;
+    margin: 0;
 }
 
 form div.input-box input::placeholder {

@@ -3,11 +3,15 @@
     <%- include('partials/header') %>
     <main class="main_form">
         <div class="forms">
+
+            <ul class="errores"></ul> 
+
             <form action="/product/create" method="post"  enctype="multipart/form-data">
                 <div>
                     <h1>Carga de Producto</h1>
                     <div class="input-box">
-                        <input type="text" placeholder="Nombre" required name="name">
+                        <input type="text" placeholder="Nombre" name="name" id="name">
+                        <p id="err-name"></p>
                     </div>
                     <div class="input-box">
                         <select class="selectCategory" name="brand" id="">Marcas
@@ -20,10 +24,12 @@
                        
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Descripcion" required name="description">
+                        <input type="text" placeholder="Descripcion" name="description" id="description">
+                        <p id="err-description"></p>
                     </div>
                     <div class="input-box">
-                        <input type="file" required name="image">
+                        <input type="file" name="image" id="image" accept="image/jpg, image/jpeg, image/gif, image/png">
+                        <p id="err-image"></p>
                     </div>
                     <div class="input-box">
                         <select class="selectCategory" name="category" id="">Categoria
@@ -35,10 +41,10 @@
                         </select>
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Sub-Categoría" required name="subCategory">
+                        <input type="text" placeholder="Sub-Categoría" name="subCategory">
                     </div>
                     <div class="input-box">
-                        <input type="number" placeholder="Precio" required name="price">
+                        <input type="number" placeholder="Precio" name="price">
                     </div>
                     <div class="input-box">
                         <input type="number" placeholder="Descuento" name="discount">
@@ -50,5 +56,8 @@
         </div>
     </main>
     <%- include('partials/footer') %>
+
+    <script src="/js/ProductCreateValidation.js"></script>
+
 </body>
 </html>

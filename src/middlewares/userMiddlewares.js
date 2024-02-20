@@ -7,9 +7,9 @@ const uploadValidator = [
     body('last_name').notEmpty().withMessage('El apellido es requerido'),
     body('email').notEmpty().withMessage('El E-mail es requerido')
         .isEmail().withMessage('Ingresa un E-mail Válido'),
-    body('password').notEmpty().withMessage('La contraseña es requerida').isLength({min:8}).withMessage('La contraseña debe contener al menos 8 caracteres.'),
-    //.matches(/^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[^\da-zA-Z]).{8,}$/)
-    //    .withMessage('La contraseña debe contener al menos una letra mayúscula, una letra minúscula, un número y un carácter especial'),
+    body('password').notEmpty().withMessage('La contraseña es requerida').isLength({min:8}).withMessage('La contraseña debe contener al menos 8 caracteres.')
+    .matches("^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*?&])")
+    .withMessage('La contraseña debe contener al menos una letra mayúscula, una letra minúscula, un número y un carácter especial'),
     body('image').custom((value, {req}) => {
         let file = req.file;
         let acceptedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];

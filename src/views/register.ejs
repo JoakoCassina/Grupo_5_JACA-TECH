@@ -4,11 +4,16 @@
         <%- include('partials/header') %>
             <main class="main_form">
                 <div class="forms">
-                    <form action="/user/register" method="post" enctype="multipart/form-data">
+
+                    <ul class="errores"></ul> 
+                    
+                    <form novalidate action="/user/register" method="post" enctype="multipart/form-data">
                         <div>
                             <h1>Datos Personales</h1>
                             <div class="input-box">
-                                <input type="text" placeholder="Nombre" name="first_name" value="<%= (locals.oldData && oldData.first_name) && oldData.first_name %>">
+                                <input type="text" placeholder="Nombre" name="first_name" id="first_name"
+                                value="<%= (locals.oldData && oldData.first_name) && oldData.first_name %>">
+                                <p id="err-first_name"></p>
                                 <% if (locals.errors && errors.first_name) { %>
                                     <span class="error">
                                         <%= errors.first_name.msg %>
@@ -16,8 +21,9 @@
                                 <% } %>
                             </div>
                             <div class="input-box">
-                                <input type="text" placeholder="Apellido" name="last_name"
+                                <input type="text" placeholder="Apellido" name="last_name" id="last_name"
                                     value="<%= (locals.oldData && oldData.last_name) && oldData.last_name %>">
+                                    <p id="err-last_name"></p>
                                 <% if (locals.errors && errors.last_name) { %>
                                     <span class="error">
                                         <%= errors.last_name.msg %>
@@ -25,8 +31,9 @@
                                 <% } %>
                             </div>
                             <div class="input-box">
-                                <input type="email" placeholder="Email" name="email"
+                                <input type="email" placeholder="Email" name="email" id="email"
                                     value="<%= (locals.oldData && oldData.email) && oldData.email %>">
+                                    <p id="err-email"></p>
                                 <% if (locals.errors && errors.email) { %>
                                     <span class="error">
                                         <%= errors.email.msg %>
@@ -34,7 +41,8 @@
                                 <% } %>
                             </div>
                             <div class="input-box">
-                                <input type="file" name="image">
+                                <input type="file" name="image" id="image" accept="image/jpg, image/jpeg, image/gif, image/png">
+                                <p id="err-image"></p>
                                 <% if (locals.errors && errors.image) { %>
                                     <span class="error">
                                         <%= errors.image.msg %>
@@ -45,9 +53,10 @@
                         <div>
                             <h1>Datos de Acceso</h1>
                             <div class="input-box">
-                                <input type="password" placeholder="Contraseña" name="password"
+                                <input type="password" placeholder="Contraseña" name="password" id="password"
                                     value="<%= (locals.oldData && oldData.password) && oldData.password %>">
                                 <i class="fas fa-lock"></i>
+                                <p id="err-password"></p>
                                 <% if (locals.errors && errors.password) { %>
                                     <span class="error">
                                         <%= errors.password.msg %>
@@ -65,6 +74,9 @@
                 </div>
             </main>
             <%- include('partials/footer') %>
+
+            <script src="/js/UserRegisterValidation.js"></script>
+            <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
     </body>
 
     </html>

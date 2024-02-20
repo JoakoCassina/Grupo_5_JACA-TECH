@@ -3,11 +3,15 @@
     <%- include('partials/header') %>
     <main class="main_form">
         <div class="forms">
+
+            <ul class="errores"></ul>
+            
             <form action="/product/<%= productEdit.id %>/edit?_method=PUT" method="post" enctype="multipart/form-data">
                 <div>
                     <h1>Edición de Producto</h1>
                     <div class="input-box">
-                        <input type="text" placeholder="Nombre" required name="name" value="<%= productEdit.name %>">
+                        <input type="text" placeholder="Nombre" name="name" id="name" value="<%= productEdit.name %>">
+                        <p id="err-name"></p>
                     </div>
                     <div class="input-box">
                         <select class="selectCategory" name="brands_id" id="">Marcas
@@ -19,10 +23,12 @@
                         </select>  
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Descripcion" required name="description" value="<%= productEdit.description %>">
+                        <input type="text" placeholder="Descripcion" name="description" id="description" value="<%= productEdit.description %>">
+                        <p id="err-description"></p>
                     </div>
                     <div class="input-box">
-                        <input type="file" name="image" value="<%= productEdit.image %>">
+                        <input type="file" name="image" id="image" value="<%= productEdit.image %>" accept="image/jpg, image/jpeg, image/gif, image/png">
+                        <p id="err-image"></p>
                     </div>
                     <div class="input-box">
                         <select class="selectCategory" name="product_categories_id" id="">Categoria
@@ -34,7 +40,7 @@
                         </select>
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Sub-Categoría" required name="sub-category" value="<%= productEdit.subCategory %>">
+                        <input type="text" placeholder="Sub-Categoría" name="sub-category" value="<%= productEdit.subCategory %>">
                     </div>
                     <div class="input-box">
                         <input type="number" placeholder="Precio" required name="price" value="<%= productEdit.price %>">
@@ -49,5 +55,8 @@
         </div>
     </main>
     <%- include('partials/footer') %>
+
+    <script src="/js/ProductEditValidation.js"></script>
+
 </body>
 </html>
