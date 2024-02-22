@@ -7,7 +7,12 @@
                 <div>
                     <h1>Carga de Producto</h1>
                     <div class="input-box">
-                        <input type="text" placeholder="Nombre" required name="name">
+                        <input type="text" placeholder="Nombre" name="name">
+                        <% if (locals.errors && errors.name) { %>
+                            <span class="error">
+                                <%= errors.name.msg %>
+                            </span>
+                        <% } %>
                     </div>
                     <div class="input-box">
                         <select class="selectCategory" name="brand" id="">Marcas
@@ -20,10 +25,20 @@
                        
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Descripcion" required name="description">
+                        <input type="text" placeholder="Descripcion" name="description">
+                        <% if (locals.errors && errors.description) { %>
+                            <span class="error">
+                                <%= errors.description.msg %>
+                            </span>
+                        <% } %>
                     </div>
                     <div class="input-box">
-                        <input type="file" required name="image">
+                        <input type="file" name="image">
+                        <% if (locals.errors && errors.image) { %>
+                            <span class="error">
+                                <%= errors.image.msg %>
+                            </span>
+                        <% } %>
                     </div>
                     <div class="input-box">
                         <select class="selectCategory" name="category" id="">Categoria
@@ -35,10 +50,10 @@
                         </select>
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Sub-Categoría" required name="subCategory">
+                        <input type="text" placeholder="Sub-Categoría" name="subCategory">
                     </div>
                     <div class="input-box">
-                        <input type="number" placeholder="Precio" required name="price">
+                        <input type="number" placeholder="Precio" name="price">
                     </div>
                     <div class="input-box">
                         <input type="number" placeholder="Descuento" name="discount">

@@ -9,10 +9,12 @@ const db = require('../database/models');
 // 	return products;
 // }
 
+const { validationResult } = require ('express-validator');
+
 
 const controller = {
 	detail(req, res) {
-		db.Product.findByPk(req.params.id)
+		db.Product.findByPk(req.params.id, {include: ['brand', 'categorie']})
 			.then((product) => {
 				res.render('productDetail', { product });
 			})
@@ -33,6 +35,10 @@ const controller = {
 	},
 	async create(req, res) {
 		try {
+			const errors = validationResult(req);
+			if (!errors.isEmpty()) {
+                return res.render('productCreate', { errors: errors.mapped(), oldData: req.body })
+            };
 			const categories = await db.Product_categorie.findAll({ include: ['subcategories'] })
 			const brand = await db.Brand.findAll();
 			res.render('productCreate', { categories, brand });
@@ -42,6 +48,10 @@ const controller = {
 	},
 	async store(req, res) {
 		try {
+			const errors = validationResult(req);
+			if (!errors.isEmpty()) {
+                return res.render('productCreate', { errors: errors.mapped(), oldData: req.body })
+            };
 			const newProduct = {
 				...req.body,
 				image: req.file?.filename || "default-image.png"
@@ -63,10 +73,16 @@ const controller = {
 		} catch (error) {
 			return res.status(500).send(error)
 		}
-
+ 
 	},
 	async update(req, res) {
 		try {
+			const errors = validationResult(req);
+			if (!errors.isEmpty()) {
+				const categories = await db.Product_categorie.findAll({ include: ['subcategories'] })
+				const brands = await db.Brand.findAll();
+                return res.render('productEdit', { errors: errors.mapped(), productEdit:req.body, categories, brands })
+            };
 			const newProduct = { 
 				...req.body,
 				image: req.file?.filename,

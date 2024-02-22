@@ -7,7 +7,12 @@
                 <div>
                     <h1>Edición de Producto</h1>
                     <div class="input-box">
-                        <input type="text" placeholder="Nombre" required name="name" value="<%= productEdit.name %>">
+                        <input type="text" placeholder="Nombre" name="name" value="<%= productEdit.name %>">
+                        <% if (locals.errors && errors.name) { %>
+                            <span class="error">
+                                <%= errors.name.msg %>
+                            </span>
+                        <% } %>
                     </div>
                     <div class="input-box">
                         <select class="selectCategory" name="brands_id" id="">Marcas
@@ -19,10 +24,20 @@
                         </select>  
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Descripcion" required name="description" value="<%= productEdit.description %>">
+                        <input type="text" placeholder="Descripcion" name="description" value="<%= productEdit.description %>">
+                        <% if (locals.errors && errors.description) { %>
+                            <span class="error">
+                                <%= errors.description.msg %>
+                            </span>
+                        <% } %>
                     </div>
                     <div class="input-box">
                         <input type="file" name="image" value="<%= productEdit.image %>">
+                        <% if (locals.errors && errors.image) { %>
+                            <span class="error">
+                                <%= errors.image.msg %>
+                            </span>
+                        <% } %>
                     </div>
                     <div class="input-box">
                         <select class="selectCategory" name="product_categories_id" id="">Categoria
@@ -34,10 +49,10 @@
                         </select>
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Sub-Categoría" required name="sub-category" value="<%= productEdit.subCategory %>">
+                        <input type="text" placeholder="Sub-Categoría" name="sub-category" value="<%= productEdit.subCategory %>">
                     </div>
                     <div class="input-box">
-                        <input type="number" placeholder="Precio" required name="price" value="<%= productEdit.price %>">
+                        <input type="number" placeholder="Precio" name="price" value="<%= productEdit.price %>">
                     </div>
                     <div class="input-box">
                         <input type="number" placeholder="Descuento" name="discount" value="<%= productEdit.discount %>">
