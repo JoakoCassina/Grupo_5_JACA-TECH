@@ -7,7 +7,8 @@
                 <div>
                     <h1>Carga de Producto</h1>
                     <div class="input-box">
-                        <input type="text" placeholder="Nombre" name="name">
+                        <input id="name" type="text" placeholder="Nombre" name="name">
+                        <p id="err-name"></p>
                         <% if (locals.errors && errors.name) { %>
                             <span class="error">
                                 <%= errors.name.msg %>
@@ -25,7 +26,8 @@
                        
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Descripcion" name="description">
+                        <input id="description" type="text" placeholder="Descripcion" name="description">
+                        <p id="err-description"></p>
                         <% if (locals.errors && errors.description) { %>
                             <span class="error">
                                 <%= errors.description.msg %>
@@ -65,5 +67,6 @@
         </div>
     </main>
     <%- include('partials/footer') %>
+    <script src="/js/productValidation"></script>
 </body>
 </html>

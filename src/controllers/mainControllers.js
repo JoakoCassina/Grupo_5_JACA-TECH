@@ -12,7 +12,7 @@ const db = require('../database/models');
 
 const controller = {
     index(req, res) {
-        db.Product.findAll({where:{ discount : {[Op.gt] : 0 }}})
+        db.Product.findAll({where:{ discount : {[Op.gt] : 0 }}, include: ['brand']})
             .then((offers) => {
                 res.render('index', {offers})
             })
@@ -21,7 +21,7 @@ const controller = {
             });
     },
     list(req, res) {
-        db.Product.findAll()
+        db.Product.findAll({include: ['brand']})
             .then((products) => {
                 res.render('list', {products})
             })
