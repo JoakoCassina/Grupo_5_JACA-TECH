@@ -37,7 +37,7 @@ const controller = {
 		try {
 			const errors = validationResult(req);
 			if (!errors.isEmpty()) {
-                return res.render('productCreate', { errors: errors.mapped(), oldData: req.body })
+                return res.render('productCreate', { errors: errors.mapped(), oldData: req.body  })
             };
 			const categories = await db.Product_categorie.findAll({ include: ['subcategories'] })
 			const brand = await db.Brand.findAll();
@@ -50,11 +50,15 @@ const controller = {
 		try {
 			const errors = validationResult(req);
 			if (!errors.isEmpty()) {
-                return res.render('productCreate', { errors: errors.mapped(), oldData: req.body })
+				const categories = await db.Product_categorie.findAll({ include: ['subcategories'] })
+				const brand = await db.Brand.findAll();
+                return res.render('productCreate', { errors: errors.mapped(), oldData: req.body, categories, brand })
             };
+			//const product = await db.Product.findByPk(req.params.id, { include: 'brand' })
 			const newProduct = {
 				...req.body,
-				image: req.file?.filename || "default-image.png"
+				image: req.file?.filename || "default-image.png",
+				//brands_id: brand.id
 			};
 			await db.Product.create(newProduct);
 			res.redirect('/list');

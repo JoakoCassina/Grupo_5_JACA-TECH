@@ -4,7 +4,7 @@
     <%- include('partials/header') %>
     <main class="home">
         <div>
-            <img class="banner" src="/img/Banner Home.png" alt="banner">
+            <img class="banner" src="/img/banner-nuevo.png" alt="banner">
         </div>
         <h2 class="title_home">Ofertas hasta 50%OFF</h2>
         <div class="article_tablet">
@@ -13,6 +13,10 @@
                 <a href="/product/productDetail/<%= product.id %>"><img src="/img/productos/<%= product.image %>" alt="imagen de producto"></a>
                 <div class="card_description">
                     <h4 class="home_description"><%= product.name %></h4>
+                    <!-- <div>
+                        <h5>MARCA</h5>
+                        <h2><%= //product.brand.name %></h2>
+                    </div>  -->
                     <div>
                         <p class="price">$<%= product.price %></p>
                         <p class="price_end">$<%= product.price - (product.price * product.discount / 100) %></p>

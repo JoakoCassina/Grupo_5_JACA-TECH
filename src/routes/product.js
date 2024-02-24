@@ -1,7 +1,7 @@
 const express = require ('express');
 const routes = express.Router();
 
-const { productValidator } = require ('../middlewares/productMiddleware');
+const { productValidator, productEditValidator } = require ('../middlewares/productMiddleware');
 const productControllers = require ('../controllers/productControllers');
 
 
@@ -32,7 +32,7 @@ routes.get('/create', productControllers.create);
 routes.post('/create', upload.single('image'), productValidator, productControllers.store);
 
 routes.get('/:id/edit', productControllers.edit);
-routes.put('/:id/edit', upload.single('image'), productValidator, productControllers.update);
+routes.put('/:id/edit', upload.single('image'),productEditValidator, productControllers.update);
 
 routes.delete('/:id/delete', productControllers.destroy);
 
