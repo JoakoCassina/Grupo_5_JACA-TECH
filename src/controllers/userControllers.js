@@ -31,6 +31,16 @@ const controller = {
                 image: req.file?.filename || "default-image.png",
                 roles_id: role.id
             };
+            const existingUser = await db.User.findOne({where: {email: req.body.email}}); 
+                if (existingUser) {
+                    return res.render("register", {
+                        errors: {
+                            email: {
+                                msg: "El correo electronico ya esta registrado"
+                            }
+                        }
+                    });
+                }
             await db.User.create(newUser)
             res.redirect('/user/login')
         } catch (error) {
@@ -44,8 +54,7 @@ const controller = {
         if (!errors.isEmpty()) {
             return res.render('login', { errors: errors.mapped(), oldData: req.body })
         };
-        // const users = getUsers();
-        //revisar exclude 
+        
         const userToLogin = await db.User.findOne({where: {email: req.body.email}});
         if (userToLogin) {
             let passwordOk = bcryptjs.compareSync(req.body.password, userToLogin.password);
@@ -96,6 +105,8 @@ const controller = {
                 roles_id: role.id
             };
             await db.User.update(newUser, {where: {id: req.params.id}})
+            const user = await db.User.findByPk(req.params.id, {attributes:{exclude:['password']}});
+            req.session.userToLogged = user;
             res.redirect('/user/profile')
         } catch (error) {
             res.status(500).send(error)

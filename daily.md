@@ -93,3 +93,10 @@ Configuracion de renderizado de formularios y bd.
 
 06/02/2024
 Metodo destroy de productController; render en index.
+
+14/02/2024
+Finalización CRUD.
+
+# Sprint 7
+18/02/2024
+Validación formulario.

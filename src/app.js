@@ -11,6 +11,8 @@ const mainRoutes = require('./routes/main');
 const productRoutes = require('./routes/product');
 const userRoutes = require('./routes/user');
 
+const userApiRoutes = require('./routes/api/user')
+const productApiRoutes = require('./routes/api/product')
 
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -36,8 +38,12 @@ app.use('/product', productRoutes);
 
 app.use('/user', userRoutes);
 
+app.use('/api/user', userApiRoutes);
+app.use('/api/product', productApiRoutes);
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+
 
 
 const port = 3035;

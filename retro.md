@@ -85,3 +85,20 @@
 
 **Dejar de hacer:** 
     procrastinar.
+    
+    
+# RETRO SPRINT 7
+**Comenzar a hacer:**
+    Desarrollo del sprint 7
+
+**Hacer más:**
+    Reuniones más frecuentes
+
+**Continuar haciendo:**
+    Ver clases grabadas, retomando temas
+
+**Hacer menos:**
+    -
+
+**Dejar de hacer:**
+    No esperar para hacer las consultas
