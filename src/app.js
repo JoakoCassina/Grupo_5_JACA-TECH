@@ -39,6 +39,8 @@ app.use('/product', productRoutes);
 app.use('/user', userRoutes);
 
 app.use('/api/user', userApiRoutes);
+app.use('/api/user/:id', userApiRoutes)
+
 app.use('/api/product', productApiRoutes);
 
 app.set('view engine', 'ejs');

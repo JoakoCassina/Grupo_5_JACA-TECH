@@ -100,3 +100,14 @@ Finalización CRUD.
 # Sprint 7
 18/02/2024
 Validación formulario.
+
+21/02/2024
+Validaciones Backend.
+
+24/02/2024
+Finalizacion del Validaciones de Formularios.
+Planificacion del Sprint 8.
+
+# Sprint 8
+26/02/2023
+Planificacion de Sprint 8 (inicio Endpoints)
