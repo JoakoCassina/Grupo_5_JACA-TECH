@@ -102,3 +102,19 @@
 
 **Dejar de hacer:**
     No esperar para hacer las consultas
+
+# RETRO SPRINT 8
+**Comenzar a hacer:**
+    Desarrollo del sprint 8
+
+**Hacer más:**
+    Trabajar en conjunto, coordinar. 
+
+**Continuar haciendo:**
+    Ver clases grabadas.
+
+**Hacer menos:**
+    -
+
+**Dejar de hacer:**
+    procrastinar.

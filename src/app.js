@@ -33,13 +33,15 @@ app.use(userLoggedMiddleware);
 
 
 app.use('/', mainRoutes);
-
 app.use('/product', productRoutes);
-
 app.use('/user', userRoutes);
 
 app.use('/api/user', userApiRoutes);
+app.use('/api/user/:id', userApiRoutes)
+
 app.use('/api/product', productApiRoutes);
+app.use('/api/product/:id', productApiRoutes);
+
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
