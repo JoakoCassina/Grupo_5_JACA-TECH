@@ -39,4 +39,4 @@ estoy haciendo mis primeros pasos en programación con este curso de Dh.
 - Decidimos utilizar los Pojects de GitHub para dar seguimiento a nuestro trabajo. Link: https://github.com/JoakoCassina/Grupo_5_JACA-TECH
 
 # PROYECTO REACT
-- URL
+- https://github.com/aleseravalle/proyectoReact.git
