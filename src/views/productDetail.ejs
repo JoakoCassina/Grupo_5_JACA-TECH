@@ -12,23 +12,26 @@
                         <div class="name">
                             <%= locals.product?.name%>
                         </div>
+                        <% if (product.discount > 0) { %>
                         <div class="price">
                             <p class="productPrice">$<%= locals.product?.price%></p>
                             <p class="price-end">$<%= product.price - (product.price * product.discount / 100) %></p>
                         </div>
-                        <!-- <div>
-                            <div>
-                                <h5>MARCA</h5>
-                                <h2><%= //locals.product?.brand.name %></h2>
+                        <% } else { %>
+                        <p class="priceSinOff">$<%= product.price %></p>
+                        <% } %>
+                        <div class="detail">
+                            <div class="description">
+                                <%= locals.product?.description%>
                             </div>
                             <div>
-                                <h5>CATEGORIA</h5>
-                                <h2><%= //locals.product?.categorie.name %></h2>
+                                <h2><%= locals.product?.brand.name %></h2>
                             </div>
-                        </div> -->
-                        <div class="description">
-                            <%= locals.product?.description%>
+                            <div>
+                                <h2><%= locals.product?.categorie.name %></h2>
+                            </div>
                         </div>
+                        
                         <div class="options">
                             <ul>
                                 <li><a href="#"><i class="far fa-credit-card"></i> Todas las formas de pago</a></li>

@@ -10,16 +10,17 @@
                 <a href="/product/productDetail/<%= product.id %>"><img src="/img/productos/<%= product.image %>" alt="imagen de producto"></a>
                 <div class="card_description">
                     <h4 class="home_description"><%= product.name %></h4>
-                    <!-- <div>
-                        <h5>MARCA</h5>
-                        <h2><%= //product.brand.name %></h2>
-                    </div> -->
                     <div>
-                        <p class="price">$<%= product.price %></p>
+                        <div class="price_desc">
+                            <% if (product.discount > 0) { %>
+                                <p class="price">$<%= product.price %></p>
+                                <p class="off"><%= product.discount %>% OFF</p>
+                            <% } %>
+                        </div>
                         <p class="price_end">$<%= product.price - (product.price * product.discount / 100) %></p>
                     </div>
                     <button class="button_card">Comprar</button>
-                    <span class="off"><%= product.discount %>% OFF</span>
+                    
                 </div>
             </article>
             <% }) %>

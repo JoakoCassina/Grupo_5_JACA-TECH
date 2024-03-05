@@ -7,7 +7,7 @@
                 <div>
                     <h1>Carga de Producto</h1>
                     <div class="input-box">
-                        <input id="name" type="text" placeholder="Nombre" name="name">
+                        <input id="name" type="text" placeholder="Nombre" name="name" value="<%= (locals.oldData && oldData.name) && oldData.name %>">
                         <p id="err-name"></p>
                         <% if (locals.errors && errors.name) { %>
                             <span class="error">
@@ -16,7 +16,7 @@
                         <% } %>
                     </div>
                     <div class="input-box">
-                        <select class="selectCategory" name="brand" id="">Marcas
+                        <select class="selectCategory" name="brands_id" id="">Marcas
                             <option value="#">Selecciona una Marca</option>
                             <% locals.brand?.forEach(element => { %>
                                 
@@ -26,7 +26,7 @@
                        
                     </div>
                     <div class="input-box">
-                        <input id="description" type="text" placeholder="Descripcion" name="description">
+                        <input id="description" type="text" placeholder="Descripcion" name="description" value="<%= (locals.oldData && oldData.description) && oldData.description %>">
                         <p id="err-description"></p>
                         <% if (locals.errors && errors.description) { %>
                             <span class="error">
@@ -43,7 +43,7 @@
                         <% } %>
                     </div>
                     <div class="input-box">
-                        <select class="selectCategory" name="category" id="">Categoria
+                        <select class="selectCategory" name="product_categories_id" id="">Categoria
                             <option value="#">Selecciona una Categoria</option>
                             <% locals.categories?.forEach(element => { %>
                                 
@@ -52,13 +52,13 @@
                         </select>
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Sub-Categoría" name="subCategory">
+                        <input type="text" placeholder="Sub-Categoría" name="subCategorie">
                     </div>
                     <div class="input-box">
-                        <input type="number" placeholder="Precio" name="price">
+                        <input type="number" placeholder="Precio" name="price" value="<%= (locals.oldData && oldData.price) && oldData.price %>">
                     </div>
                     <div class="input-box">
-                        <input type="number" placeholder="Descuento" name="discount">
+                        <input type="number" placeholder="Descuento" name="discount" value="<%= (locals.oldData && oldData.discount) && oldData.discount %>">
                     </div>
                     <button type="submit">Cargar</button>
                     <button type="reset">Limpiar Datos</button>

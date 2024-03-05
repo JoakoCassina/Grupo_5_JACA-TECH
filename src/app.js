@@ -1,11 +1,15 @@
 const express = require('express');
 const path = require('path')
 const app = express();
+const cors = require('cors');
+
 const methodOverride =  require('method-override');
 const session = require('express-session');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware')
 const cookies = require ('cookie-parser')
 const cookieMiddleware = require('./middlewares/cookieMiddleware')
+
+
 
 const mainRoutes = require('./routes/main');
 const productRoutes = require('./routes/product');
@@ -31,6 +35,7 @@ app.use(cookies());
 app.use(cookieMiddleware);
 app.use(userLoggedMiddleware);
 
+app.use(cors());
 
 app.use('/', mainRoutes);
 app.use('/product', productRoutes);
@@ -42,6 +47,9 @@ app.use('/api/user/:id', userApiRoutes)
 app.use('/api/product', productApiRoutes);
 app.use('/api/product/:id', productApiRoutes);
 
+app.use((req, res, next) => {
+    res.status(404).render('error')
+})
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));

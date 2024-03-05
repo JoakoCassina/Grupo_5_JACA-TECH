@@ -2,8 +2,8 @@
     padding: 50px;
 }
 section.pDetail{
+    background-color: seashell;
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: auto; 
     border-radius: 40px;
@@ -18,18 +18,14 @@ section.pDetail{
     padding: 30px;
 }
 
-.pdDescription{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 5px;
-}
 .pdDescription div.name{
     width: 100%;
-    color: #fff;
+    color: #666;
     font-weight: 500;
     margin-bottom: 5px;
     text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .pdDescription div.price {
     display: flex;
@@ -42,13 +38,25 @@ section.pDetail{
     font-size: 1.5rem;
     margin-left: 20px;
     text-decoration: line-through;
-    color: #ffffff;
+    text-decoration-color: red;
+    color: #6669;
 }
 .pdDescription div p.price-end {
     font-size: 1.5rem;
     margin-right: 20px;
     color: #0D512A;
     font-weight: 700;
+}
+.priceSinOff {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+div.detail {
+    color: #666;
+    display: block;
+    text-align: center;
 }
 .pdDescription div.options{
     width: 100%;
@@ -64,9 +72,9 @@ section.pDetail{
 }
 .pdDescription div.description{
     margin-top: 15px;
-    color: #fff;
-    text-align: justify;
+    color: #666;
     padding: 10px;
+    text-transform: uppercase;
 }
 
 div.buttons div.buttonEdit{
