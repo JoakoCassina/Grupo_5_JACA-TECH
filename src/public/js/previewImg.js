@@ -9,3 +9,12 @@ file.addEventListener('change', e => {
         reader.readAsDataURL(e.target.files[0])
     }
 });
+
+function confirmDelete() {
+    const msj = confirm('¿Deseas eliminar este producto?');
+    if (msj == true) {
+        return true;
+    } else {
+        return false
+    }
+}

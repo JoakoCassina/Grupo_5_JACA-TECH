@@ -47,14 +47,14 @@
                         <% if(locals.userToLogged && locals.userToLogged?.role?.name === 'Administrador') { %>
                         <a href="/product/<%= locals.product?.id %>/edit">Editar Producto</a>
                     <form action="/product/<%= locals.product?.id %>/delete?_method=DELETE" method="post">
-                        <button type="submit"><i class="fa-solid fa-trash-can"></i></button>
+                        <button type="submit" onclick="return confirmDelete()"><i class="fa-solid fa-trash-can"></i></button>
                     </form>
                     <% } %>
                     </div>
                 </div>
             </main>
             <%- include('partials/footer') %>
-
+            <script src="/js/previewImg.js"></script>
     </body>
 
     </html>
