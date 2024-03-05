@@ -58,7 +58,9 @@ const controller = {
 			const newProduct = {
 				...req.body,
 				image: req.file?.filename || "default-image.png",
-				//brands_id: brand.id
+				brands_id: parseInt(req.body.brands_id, 10),
+				product_categories_id: parseInt(req.body.product_categories_id, 10)
+				//subcategorie: parseInt(req.body.subcategorie, 10)
 			};
 			await db.Product.create(newProduct);
 			res.redirect('/list');

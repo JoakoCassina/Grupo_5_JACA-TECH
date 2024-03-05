@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const db = require('../database/models');
 
 const usersFilePath = path.join(__dirname, '../data/users.json');
 function getUsers() {
@@ -7,11 +8,10 @@ function getUsers() {
     return users;
 }
 
-function cookieMiddleware(req, res, next){
-    const users = getUsers();
+async function cookieMiddleware(req, res, next){
     
     if(req.cookies.loginEmail){
-        const userCookie = users.find(user => user.email === req.cookies.loginEmail)
+        const userCookie = await db.User.findOne({where: {email: req.cookies.loginEmail}, include:['role'], attributes: {exclude: ['password']}});
         req.session.userToLogged = userCookie;
     }
     next();

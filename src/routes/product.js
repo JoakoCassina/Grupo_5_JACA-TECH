@@ -4,6 +4,8 @@ const routes = express.Router();
 const { productValidator, productEditValidator } = require ('../middlewares/productMiddleware');
 const productControllers = require ('../controllers/productControllers');
 
+const notLoggedMiddleware = require ('../middlewares/notLoggedMiddleware');
+
 
 const multer = require('multer');
 const path = require('path');
@@ -28,13 +30,13 @@ routes.get('/search', productControllers.search);
 routes.get('/productDetail/:id', productControllers.detail);
 routes.get('/productCart', productControllers.cart);
 
-routes.get('/create', productControllers.create);
+routes.get('/create', notLoggedMiddleware, productControllers.create);
 routes.post('/create', upload.single('image'), productValidator, productControllers.store);
 
-routes.get('/:id/edit', productControllers.edit);
-routes.put('/:id/edit', upload.single('image'),productEditValidator, productControllers.update);
+routes.get('/:id/edit', notLoggedMiddleware, productControllers.edit);
+routes.put('/:id/edit', upload.single('image'), productEditValidator, productControllers.update);
 
-routes.delete('/:id/delete', productControllers.destroy);
+routes.delete('/:id/delete', notLoggedMiddleware, productControllers.destroy);
 
 
 
