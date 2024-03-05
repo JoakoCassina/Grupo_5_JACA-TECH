@@ -44,10 +44,12 @@
                 <div class="buttons">
                     <div class="buttonEdit">
                         <button type="submit">Agregar al carrito</button>
+                        <% if(locals.userToLogged && locals.userToLogged?.role?.name === 'Administrador') { %>
                         <a href="/product/<%= locals.product?.id %>/edit">Editar Producto</a>
                     <form action="/product/<%= locals.product?.id %>/delete?_method=DELETE" method="post">
                         <button type="submit"><i class="fa-solid fa-trash-can"></i></button>
                     </form>
+                    <% } %>
                     </div>
                 </div>
             </main>

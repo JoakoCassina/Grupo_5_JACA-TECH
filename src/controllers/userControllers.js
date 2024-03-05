@@ -56,7 +56,7 @@ const controller = {
             return res.render('login', { errors: errors.mapped(), oldData: req.body })
         };
         
-        const userToLogin = await db.User.findOne({where: {email: req.body.email}});
+        const userToLogin = await db.User.findOne({where: {email: req.body.email}, include:['role']});
         if (userToLogin) {
             let passwordOk = bcryptjs.compareSync(req.body.password, userToLogin.password);
             if (passwordOk) {
@@ -106,7 +106,7 @@ const controller = {
                 roles_id: role.id
             };
             await db.User.update(newUser, {where: {id: req.params.id}})
-            const user = await db.User.findByPk(req.params.id, {attributes:{exclude:['password']}});
+            const user = await db.User.findByPk(req.params.id, {attributes:{exclude:['password']}, include:['role']});
             req.session.userToLogged = user;
             res.redirect('/user/profile')
         } catch (error) {
@@ -115,7 +115,7 @@ const controller = {
     },
     async profile(req, res) {
         try {
-            const user = await db.User.findByPk(req.session.userToLogged?.id, {attributes:{exclude:['password']}});
+            const user = await db.User.findByPk(req.session.userToLogged?.id, {attributes:{exclude:['password']}, include:['role']});
             req.session.userToLogged = user;
             return res.render('profile', {
                 userSession: user
