@@ -24,6 +24,9 @@
                 <li><i class="fa-brands fa-node"></i>Node.JS</li>
                 <li><i class="fa-brands fa-react"></i>React</li>
             </ul>
+            <% if(locals.userToLogged && locals.userToLogged?.role?.name === 'Administrador') { %>
+            <span><a href="/product/Create">CREAR</a></span>
+            <% } %>
         </div>
         <div class="buttonProfile">
             <a href="/user/edit/<%= userSession.id %>"><button class="buttonPrincipal">Editar</button></a>
